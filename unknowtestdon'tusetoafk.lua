@@ -1395,7 +1395,7 @@ end
                                             task.wait()
                                             
                                             if checkValue > 50000 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                            500  then -- op move stack 
+                                            5000  then -- op move stack 
 
                                                 repeat
                                                    
@@ -1426,7 +1426,7 @@ end
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 0
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 5000
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1435,9 +1435,7 @@ end
                                                         task.wait()
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                         game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 500 and
-                                                        checkValue > 50000
-
+                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 5000 
                                                 end)
                                             
                                                task.wait(1.5)
@@ -1527,7 +1525,7 @@ end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value > 1000 
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value > 100000 
                                                     
 
                                             end
