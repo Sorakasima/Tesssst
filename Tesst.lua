@@ -633,12 +633,12 @@ local quests = {{
     name = "Chilly",
     nickname = "Chilly",
     requiredValue = 750001,
-    endRange = 1000000,
+    endRange = 1500000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 1000001,
+    requiredValue = 1500001,
     endRange = 2000000,
     planet = "Earth"
 }, {
