@@ -1423,7 +1423,7 @@ end
                                                     until spam == 8 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0
     
-                                                    task.wait(0.3)
+                                                    task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
                                                     game.Workspace.Living[targetted].Stats.Ki.Value < 5000
@@ -1467,7 +1467,7 @@ end
                                                     until spam == 5 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0
                                                     
-                                                    task.wait(0.3)
+                                                    task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
                                                     game.Workspace.Living[targetted].Stats.Ki.Value < 200
@@ -1525,10 +1525,9 @@ end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value > 100000 
-                                                    
-
-                                            end
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 205 
+                                                   
+				         	end
                                             task.wait()
                                         end
                                  
