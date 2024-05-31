@@ -987,9 +987,11 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks1 = {"Super Dragon Fist", "Meteor Crash", "God Slicer", "Mach Kick", "High Power Rush", "Spirit Breaking Cannon" }
+local attacks1 = {"Super Dragon Fist","Wolf Fang Fist","God Slicer", "Meteor Crash", , "High Power Rush", 
+                "Spirit Breaking Cannon", "Vital Strike", "Sledgehammer", "Flash Kick" 
+                 }
 -- Function
-local attacks2 = {"Wolf Fang Fist", "Vital Strike", "Uppercut", "Meteor Charge", "Flash Kick", "Spirit Barrage", "Meteor Strike"}
+local attacks2 = {"Meteor Charge", "Spirit Barrage","Meteor Strike" }
 local RebValue = ""
 
 local rebirthOnJoin = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId].Rebirth.Value
@@ -1394,7 +1396,7 @@ end
                                             task.wait()
                                             
                                             if checkValue > 50000 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                            500  then -- op move stack 
+                                            300  then -- op move stack 
 
                                                 repeat
                                                    
@@ -1407,7 +1409,7 @@ end
                                                         
                                                                
                                                         
-                                                        for _, A_1 in ipairs(attacks2) do
+                                                        for _, A_1 in ipairs(attacks1) do
                                                             task.spawn(function()
                                                                 task.wait()
                                                                 game:GetService("ReplicatedStorage").Package.Events.mel:InvokeServer(
@@ -1453,7 +1455,7 @@ end
                                                         
                                                                
                                                         
-                                                        for _, A_1 in ipairs(attacks1) do
+                                                        for _, A_1 in ipairs(attacks2) do
                                                             task.spawn(function()
                                                                 task.wait()
                                                                 game:GetService("ReplicatedStorage").Package.Events.mel:InvokeServer(
