@@ -645,7 +645,7 @@ local quests = {{
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
     requiredValue = 2000001,
-    endRange = 325000,
+    endRange = 3250000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
