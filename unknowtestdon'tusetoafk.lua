@@ -1486,7 +1486,7 @@ end
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
                                                     
                                                    
-				                            	end
+				                            	
                                             task.wait()
                                         end
                                  
