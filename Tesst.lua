@@ -987,7 +987,7 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks1 = {"Super Dragon Fist", "Wolf Fang Fist","God Slicer", "Meteor Crash", "High Power Rush", 
+local attacks1 = {"Super Dragon Fist", "Wolf Fang Fist", "God Slicer", "Meteor Crash", "Mach Kick", "High Power Rush", 
                  "Sledgehammer", "Vital Strike", "Flash Kick"}
 -- Function
 local attacks2 = {"Meteor Charge", "Spirit Barrage", "Meteor Strike", "Spirit Breaking Cannon"}
