@@ -987,10 +987,9 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks1 = {"Meteor Crash", "God Slicer", "Mach Kick" , "Super Dragon Fist",  "Wolf Fang Fist", "High Power Rush"}
+local attacks1 = {"Super Dragon Fist", "Meteor Crash", "God Slicer", "Mach Kick", "High Power Rush", "Spirit Breaking Cannon" }
 -- Function
-local attacks2 = {"Meteor Strike", "Bone Crusher", "Meteor Charge","Flash Kick", "Spirit Barrage", "Spirit Breaking Cannon"}
-
+local attacks2 = {"Wolf Fang Fist", "Vital Strike", "Uppercut", "Meteor Charge", "Flash Kick", "Spirit Barrage", "Meteor Strike"}
 local RebValue = ""
 
 local rebirthOnJoin = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId].Rebirth.Value
@@ -1408,7 +1407,7 @@ end
                                                         
                                                                
                                                         
-                                                        for _, A_1 in ipairs(attacks1) do
+                                                        for _, A_1 in ipairs(attacks2) do
                                                             task.spawn(function()
                                                                 task.wait()
                                                                 game:GetService("ReplicatedStorage").Package.Events.mel:InvokeServer(
@@ -1454,7 +1453,7 @@ end
                                                         
                                                                
                                                         
-                                                        for _, A_1 in ipairs(attacks2) do
+                                                        for _, A_1 in ipairs(attacks1) do
                                                             task.spawn(function()
                                                                 task.wait()
                                                                 game:GetService("ReplicatedStorage").Package.Events.mel:InvokeServer(
