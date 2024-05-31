@@ -651,24 +651,24 @@ local quests = {{
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
     requiredValue = 3025001,
-    endRange = 4000000,
+    endRange = 4500000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 4000001,
-    endRange = 25000000,
+    requiredValue = 4500001,
+    endRange = 35000000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 25000001,
-    endRange = 55000000,
+    requiredValue = 35000001,
+    endRange = 60000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 55000001,
+    requiredValue = 60000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
@@ -687,24 +687,24 @@ local quests = {{
     name = "Vills (50%)",
     nickname = "Vills (50%)",
     requiredValue = 300000001,
-    endRange = 400000000,
+    endRange = 450000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 400000001,
-    endRange = 650000000,
+    requiredValue = 450000001,
+    endRange = 675000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 650000001,
-    endRange = 850000000,
+    requiredValue = 675000001,
+    endRange = 875000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 850000001,
+    requiredValue = 875000001,
     endRange = 1250000000,
     planet = "Bills"
 }, {
@@ -1396,58 +1396,12 @@ end
                                         repeat
                                             task.wait()
                                             
-                                            if checkValue > 150000 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                            1000  then -- op move stack 
+                                            if checkValue > 10000 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                            250  then -- op move stack 
 
                                                 repeat
                                                    
                                                    
-                                                        task.wait()
-                                                        A_2 = "Blacknwhite27"
-                                                        local spam = 0
-                                                        repeat
-                                                            task.spawn(function()
-                                                        
-                                                               
-                                                        
-                                                        for _, A_1 in ipairs(attacks2) do
-                                                            task.spawn(function()
-                                                                task.wait()
-                                                                game:GetService("ReplicatedStorage").Package.Events.mel:InvokeServer(
-                                                                    A_1, A_2)
-                                                            end)
-                                                            
-                                                         
-                                                        end
-                                                        spam = spam + 1
-                                                        wait()
-                                                    end) 
-                                                    until spam == 10 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0
-    
-                                                    task.wait(0.3)
-                                                until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 1000
-                                            else
-                                                task.spawn(function()
-                                                    repeat
-                                                        game:GetService("ReplicatedStorage").Package.Events.p:FireServer(
-                                                            "Blacknwhite27", 1)
-                                                        task.wait()
-                                                    until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 1000 and
-                                                        checkValue > 150000
-
-                                                end)
-
-                                               wait()
-
-                                                if checkValue > 10000 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                                200  then -- op move stack 1
-
-                                                repeat
                                                         task.wait()
                                                         A_2 = "Blacknwhite27"
                                                         local spam = 0
@@ -1470,11 +1424,11 @@ end
                                                     end) 
                                                     until spam == 10 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0
-                                                    
+    
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 200
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 250
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1483,8 +1437,54 @@ end
                                                         task.wait()
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                         game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 200 and
+                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 1000 and
                                                         checkValue > 10000
+
+                                                end)
+
+                                               wait(1.5)
+
+                                                if checkValue > 150000 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                                1000  then -- op move stack 1
+
+                                                repeat
+                                                        task.wait()
+                                                        A_2 = "Blacknwhite27"
+                                                        local spam = 0
+                                                        repeat
+                                                            task.spawn(function()
+                                                        
+                                                               
+                                                        
+                                                        for _, A_1 in ipairs(attacks2) do
+                                                            task.spawn(function()
+                                                                task.wait()
+                                                                game:GetService("ReplicatedStorage").Package.Events.mel:InvokeServer(
+                                                                    A_1, A_2)
+                                                            end)
+                                                            
+                                                         
+                                                        end
+                                                        spam = spam + 1
+                                                        wait()
+                                                    end) 
+                                                    until spam == 10 or
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0
+                                                    
+                                                    task.wait(0.3)
+                                                until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 1000
+                                            else
+                                                task.spawn(function()
+                                                    repeat
+                                                        game:GetService("ReplicatedStorage").Package.Events.p:FireServer(
+                                                            "Blacknwhite27", 1)
+                                                        task.wait()
+                                                    until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
+                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 1000 and
+                                                        checkValue > 150000
 
                                                 end)
 
