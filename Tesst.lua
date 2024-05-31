@@ -988,10 +988,9 @@ end
 questneeded = false
 -- Function
 local attacks1 = {"Super Dragon Fist", "Wolf Fang Fist","God Slicer", "Meteor Crash", "High Power Rush", 
-                "Spirit Breaking Cannon", "Vital Strike", "Sledgehammer", "Flash Kick" 
-                 }
+                "Spirit Breaking Cannon", "Vital Strike", "Sledgehammer", "Flash Kick"}
 -- Function
-local attacks2 = {"Meteor Charge", "Spirit Barrage","Meteor Strike" }
+local attacks2 = {"Meteor Charge", "Spirit Barrage", "Meteor Strike"}
 local RebValue = ""
 
 local rebirthOnJoin = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId].Rebirth.Value
@@ -1441,7 +1440,7 @@ end
 
                                                 end)
 
-                                               wait(2)
+                                               wait()
 
                                                 if checkValue > 10000 and game.Workspace.Living[targetted].Stats.Ki.Value >
                                                 250  then -- op move stack 1
