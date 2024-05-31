@@ -633,42 +633,42 @@ local quests = {{
     name = "Chilly",
     nickname = "Chilly",
     requiredValue = 750001,
-    endRange = 950000,
+    endRange = 1000000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 950001,
-    endRange = 2050000,
+    requiredValue = 1000001,
+    endRange = 2000000,
     planet = "Earth"
 }, {
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
-    requiredValue = 2050001,
-    endRange = 3025000,
+    requiredValue = 2000001,
+    endRange = 325000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 3025001,
-    endRange = 4500000,
+    requiredValue = 3250001,
+    endRange = 4000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 4500001,
-    endRange = 35000000,
+    requiredValue = 4000001,
+    endRange = 25000000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 35000001,
-    endRange = 60000000,
+    requiredValue = 25000001,
+    endRange = 55000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 60000001,
+    requiredValue = 55000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
@@ -693,18 +693,18 @@ local quests = {{
     name = "Vis (20%)",
     nickname = "Vis (20%)",
     requiredValue = 450000001,
-    endRange = 675000000,
+    endRange = 650000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 675000001,
-    endRange = 875000000,
+    requiredValue = 650000001,
+    endRange = 850000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 875000001,
+    requiredValue = 850000001,
     endRange = 1250000000,
     planet = "Bills"
 }, {
@@ -987,11 +987,11 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks = {"Super Dragon Fist", "God Slicer", "Spirit Barrage" }
+local attacks = {"Super Dragon Fist", "God Slicer", "Spirit Barrage"}
 -- Function
-local attacks1 = {"Wolf Fang Fist", "Uppercut", "Vanish Strike", "Meteor Crash", "Vital Strike", "Sledgehammer", "Bone Crusher"}
+local attacks1 = {"Meteor Charge", "Flash Kick","Spirit Breaking Cannon", "Mach Kick", "Wolf Fang Fist"}
 -- Function
-local attacks2 = { "Mach Kick", "Meteor Charge", "Flash Kick", "Spirit Breaking Cannon", "Meteor Strike", "High Power Rush"}
+local attacks2 = {"Meteor Strike", "Bone Crusher", "High Power Rush"}
 
 local RebValue = ""
 
@@ -1396,8 +1396,8 @@ end
                                         repeat
                                             task.wait()
                                             
-                                            if checkValue > 10000 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                            250  then -- op move stack 
+                                            if checkValue > 150000 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                            1000  then -- op move stack 
 
                                                 repeat
                                                    
@@ -1428,7 +1428,7 @@ end
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 250
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 1000
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1438,14 +1438,14 @@ end
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                         game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
                                                         game.Workspace.Living[targetted].Stats.Ki.Value > 1000 and
-                                                        checkValue > 10000
+                                                        checkValue > 150000
 
                                                 end)
 
-                                               wait(1.5)
+                                               wait(.5)
 
-                                                if checkValue > 150000 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                                1000  then -- op move stack 1
+                                                if checkValue > 10000 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                                250  then -- op move stack 1
 
                                                 repeat
                                                         task.wait()
@@ -1474,7 +1474,7 @@ end
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 1000
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 250
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1483,8 +1483,8 @@ end
                                                         task.wait()
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                         game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 1000 and
-                                                        checkValue > 150000
+                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 250 and
+                                                        checkValue > 10000
 
                                                 end)
 
@@ -1521,7 +1521,7 @@ end
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 1000
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 10000
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1563,7 +1563,7 @@ end
                                                             Event:InvokeServer(A_1, A_2, A_3)
 
                                                         end)
-                                                        task.wait(.3)
+                                                        task.wait()
                                                     else
 
                                                         game:GetService("ReplicatedStorage").Package.Events.p:FireServer(
