@@ -987,9 +987,9 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks1 = {"Meteor Crash", "God Slicer", "Spirit Barrage", "Spirit Breaking Cannon","Super Dragon Fist", "Mach Kick", "Wolf Fang Fist"}
+local attacks1 = {"Meteor Crash", "God Slicer", "Mach Kick" , "Super Dragon Fist",  "Wolf Fang Fist", "High Power Rush"}
 -- Function
-local attacks2 = {"Meteor Strike", "Bone Crusher", "Meteor Charge", "High Power Rush","Flash Kick"}
+local attacks2 = {"Meteor Strike", "Bone Crusher", "Meteor Charge","Flash Kick", "Spirit Barrage", "Spirit Breaking Cannon"}
 
 local RebValue = ""
 
@@ -1440,7 +1440,7 @@ end
 
                                                 end)
 
-                                               wait(.5)
+                                               wait(2)
 
                                                 if checkValue > 10000 and game.Workspace.Living[targetted].Stats.Ki.Value >
                                                 250  then -- op move stack 1
