@@ -633,36 +633,36 @@ local quests = {{
     name = "Chilly",
     nickname = "Chilly",
     requiredValue = 750001,
-    endRange = 1500000,
+    endRange = 950000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 1500001,
+    requiredValue = 950001,
     endRange = 2000000,
     planet = "Earth"
 }, {
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
     requiredValue = 2000001,
-    endRange = 3250000,
+    endRange = 1625000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 3250001,
-    endRange = 4000000,
+    requiredValue = 1625001,
+    endRange = 2000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 4000001,
-    endRange = 20000000,
+    requiredValue = 2000001,
+    endRange = 13500000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 20000001,
+    requiredValue = 13500001,
     endRange = 40000000,
     planet = "Earth"
 }, {
@@ -675,36 +675,36 @@ local quests = {{
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 180000000,
+    endRange = 150000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 180000001,
-    endRange = 300000000,
+    requiredValue = 150000001,
+    endRange = 225000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 300000001,
-    endRange = 450000000,
+    requiredValue = 225000001,
+    endRange = 325000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 450000001,
-    endRange = 650000000,
+    requiredValue = 325000001,
+    endRange = 550000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 650000001,
-    endRange = 850000000,
+    requiredValue = 550000001,
+    endRange = 755000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 850000001,
+    requiredValue = 755000001,
     endRange = 1250000000,
     planet = "Bills"
 }, {
@@ -987,10 +987,10 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks1 = {"Super Dragon Fist", "Wolf Fang Fist", "God Slicer", "Meteor Crash", "Mach Kick", "High Power Rush", 
-                 "Sledgehammer", "Vital Strike", "Flash Kick"}
+local attacks1 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Meteor Crash", "Mach Kick", "Wolf Fang Fist"
+                "High Power Rush", "Meteor Strike", "Meteor Charge"}
 -- Function
-local attacks2 = {"Meteor Charge", "Spirit Barrage", "Meteor Strike", "Spirit Breaking Cannon"}
+local attacks2 = {"Sledgehammer", "Vital Strike", "Flash Kick", "Spirit Breaking Cannon"}
 local RebValue = ""
 
 local rebirthOnJoin = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId].Rebirth.Value
@@ -1395,7 +1395,7 @@ end
                                             task.wait()
                                             
                                             if checkValue > 50000 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                            300  then -- op move stack 
+                                            500  then -- op move stack 
 
                                                 repeat
                                                    
@@ -1420,7 +1420,7 @@ end
                                                         spam = spam + 1
                                                         wait()
                                                     end) 
-                                                    until spam == 10 or
+                                                    until spam == 8 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0
     
                                                     task.wait(0.3)
@@ -1440,10 +1440,10 @@ end
 
                                                 end)
 
-                                               wait(1.5)
+                                               task.wait(1.5)
 
-                                                if checkValue > 10000 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                                250  then -- op move stack 1
+                                                if checkValue > 1000 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                                200  then -- op move stack 1
 
                                                 repeat
                                                         task.wait()
@@ -1466,13 +1466,13 @@ end
                                                         spam = spam + 1
                                                         wait()
                                                     end) 
-                                                    until spam == 10 or
+                                                    until spam == 5 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0
                                                     
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 250
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 200
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1485,7 +1485,8 @@ end
                                                         checkValue > 10000
 
                                                 end)
-
+                                                
+                                                task.wait()
 
                                                 repeat
                                                     if game.Workspace.Living[targetted].Stats.Ki.Value > 205 then
