@@ -1376,7 +1376,7 @@ end
                                                 local myChar = game.Players.LocalPlayer.Character
                                                 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 2.5)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 2.3)
 
                                                 task.wait()
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
@@ -1528,8 +1528,7 @@ end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value > 1000 and
-                                                    checkValue > 90000
+                                                    
 
                                             end
                                             task.wait()
