@@ -1400,10 +1400,10 @@ end
                                                 repeat
                                                    
                                                    
-                                                        task.wait()
-                                                        A_2 = "Blacknwhite27"
-                                                        local spam = 0
-                                                        repeat
+                                                task.wait()
+                                                A_2 = "Blacknwhite27"
+                                                local spam = 0
+                                                    repeat
                                                             task.spawn(function()
                                                         
                                                                
@@ -1533,7 +1533,7 @@ end
                                             end
                                             task.wait()
                                         end
-                                    end  
+                                 
 
                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                             game.Players.LocalPlayer.Character.Humanoid.Health <= 0
