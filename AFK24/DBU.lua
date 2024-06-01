@@ -663,12 +663,12 @@ local quests = {{
     name = "Broccoli",
     nickname = "Broccoli",
     requiredValue = 17500001,
-    endRange = 60000000,
+    endRange = 50000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 60000001,
+    requiredValue = 50000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
