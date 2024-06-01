@@ -651,24 +651,24 @@ local quests = {{
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
     requiredValue = 1625001,
-    endRange = 2000000,
+    endRange = 3500000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 2000001,
-    endRange = 13500000,
+    requiredValue = 3500001,
+    endRange = 20500000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 13500001,
-    endRange = 40000000,
+    requiredValue = 20500001,
+    endRange = 37000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 40000001,
+    requiredValue = 37000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
