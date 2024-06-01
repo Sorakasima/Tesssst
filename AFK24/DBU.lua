@@ -615,43 +615,43 @@ local quests = {{
     name = "Mapa",
     nickname = "Mapa",
     requiredValue = 100001,
-    endRange = 150000,
+    endRange = 200000,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 150001,
+    requiredValue = 200001,
     endRange = 350000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
     requiredValue = 350001,
-    endRange = 1000000,
+    endRange = 1250000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 1000001,
-    endRange = 1750000,
+    requiredValue = 1250001,
+    endRange = 1500000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 1750001,
-    endRange = 2500000,
+    requiredValue = 1500001,
+    endRange = 2000000,
     planet = "Earth"
 }, {
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
-    requiredValue = 2500001,
-    endRange = 3500000,
+    requiredValue = 2000001,
+    endRange = 3000000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 3500001,
-    endRange = 3500000,
+    requiredValue = 3000001,
+    endRange = 4000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
@@ -687,24 +687,24 @@ local quests = {{
     name = "Vills (50%)",
     nickname = "Vills (50%)",
     requiredValue = 300000001,
-    endRange = 550000000,
+    endRange = 500000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 550000001,
-    endRange = 800000000,
+    requiredValue = 500000001,
+    endRange = 900000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 800000001,
-    endRange = 1250000000,
+    requiredValue = 900000001,
+    endRange = 1350000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 1250000001,
+    requiredValue = 1350000001,
     endRange = 2000000000,
     planet = "Bills"
 }, {
@@ -987,12 +987,11 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"God Slicer", "Spirit Barrage", "Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush"}
+local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush"}
 
 -- Function
-local attacks = { "Vital Strike", "Uppercut", "Super Dragon Fist",
-                  "Meteor Charge","Meteor Strike", "Spirit Breaking Cannon", "Energy Volley", "Flash Kick",
-                  "Vanish Strike"}
+local attacks = { "Vital Strike", "Uppercut", "Meteor Charge","Meteor Strike", 
+		"Spirit Breaking Cannon", "Energy Volley", "Flash Kick", "Vanish Strike"}
 
 local RebValue = ""
 
