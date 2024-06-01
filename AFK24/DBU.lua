@@ -675,12 +675,12 @@ local quests = {{
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 120000000,
+    endRange = 180000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 120000001,
+    requiredValue = 180000001,
     endRange = 250000000,
     planet = "Bills"
 }, {
