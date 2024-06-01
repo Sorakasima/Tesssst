@@ -621,18 +621,18 @@ local quests = {{
     name = "Top X Fighter",
     nickname = "X Fighter Master",
     requiredValue = 150501,
-    endRange = 250000,
+    endRange = 350000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 250001,
-    endRange = 750000,
+    requiredValue = 350001,
+    endRange = 100000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 750001,
+    requiredValue = 100001,
     endRange = 1000000,
     planet = "Earth"
 }, {
@@ -657,12 +657,12 @@ local quests = {{
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
     requiredValue = 4500001,
-    endRange = 17000000,
+    endRange = 25000000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 17000001,
+    requiredValue = 25000001,
     endRange = 60000000,
     planet = "Earth"
 }, {
@@ -681,36 +681,36 @@ local quests = {{
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
     requiredValue = 150000001,
-    endRange = 225000000,
+    endRange = 300000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 225000001,
-    endRange = 325000000,
+    requiredValue = 300000001,
+    endRange = 500000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 325000001,
-    endRange = 550000000,
+    requiredValue = 500000001,
+    endRange = 800000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 550000001,
-    endRange = 755000000,
+    requiredValue = 800000001,
+    endRange = 1200000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 755000001,
-    endRange = 1250000000,
+    requiredValue = 1200000001,
+    endRange = 2500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 1250000001,
+    requiredValue = 2500000001,
     endRange = 2650000000,
     planet = "Bills"
 }, {
@@ -987,13 +987,12 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Mach Kick", "Wolf Fang Fist", "High Power Rush",
-                  "Meteor Strike", "Meteor Charge","Meteor Strike","Flash Kick", "Spirit Breaking Cannon", "Energy Volley"}
+local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Mach Kick", "Wolf Fang Fist", "Meteor Crash", "High Power Rush"}
 
 -- Function
-local attacks = { "Vital Strike", "Uppercut"
-                 , "Vanish Strike"
-                }
+local attacks = { "Vital Strike", "Uppercut",
+                  "Meteor Charge","Meteor Strike", "Spirit Breaking Cannon", "Energy Volley", "Flash Kick",
+                  "Vanish Strike"}
 
 local RebValue = ""
 
