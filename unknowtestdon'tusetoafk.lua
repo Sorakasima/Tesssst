@@ -1528,10 +1528,10 @@ end
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
                                                     
 
-                                            end
+                                            
                                             task.wait()
                                         end
-                                 
+                                    end
 
                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                             game.Players.LocalPlayer.Character.Humanoid.Health <= 0
