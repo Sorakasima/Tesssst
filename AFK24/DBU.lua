@@ -603,12 +603,6 @@ local quests = {{
     name = "Kid Nohag",
     nickname = "Kid Nohag",
     requiredValue = 60001,
-    endRange = 80000,
-    planet = "Earth"
-}, {
-    name = "Turtle Student",
-    nickname = "Turtle Student",
-    requiredValue = 80001,
     endRange = 100000,
     planet = "Earth"
 }, {
