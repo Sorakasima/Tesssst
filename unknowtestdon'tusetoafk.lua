@@ -988,9 +988,9 @@ end
 questneeded = false
 -- Function
 local attacks1 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Meteor Crash", "Mach Kick", "Wolf Fang Fist",
-                "High Power Rush", "Meteor Strike","Spirit Breaking Cannon" }
+                "High Power Rush", "Spirit Breaking Cannon" }
 -- Function
-local attacks2 = {"Vital Strike", "Meteor Charge", "Flash Kick", "Sledgehammer", "Bone Crusher", "Uppercut"}
+local attacks2 = {"Vital Strike", "Meteor Charge","Meteor Strike", "Flash Kick", "Sledgehammer", "Bone Crusher", "Uppercut"}
 local RebValue = ""
 
 local rebirthOnJoin = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId].Rebirth.Value
