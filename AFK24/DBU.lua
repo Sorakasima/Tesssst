@@ -763,7 +763,7 @@ local function check1()
         if checkValue < 120000000 and game.placeId ~= 3311165597 then
             local A_1 = "Earth"
             local Event = game:GetService("ReplicatedStorage").Package.Events.TP
-            Event:InvokeServer(A_1)
+             Event:InvokeServer(A_1)
             task.wait(8)
         end
     end
@@ -994,11 +994,11 @@ end
 questneeded = false
 -- Function
 local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Mach Kick", "Wolf Fang Fist", "High Power Rush",
-                  "Meteor Strike", "Meteor Charge","Meteor Strike", "Spirit Breaking Cannon", "Energy Volley"}
+                  "Meteor Strike", "Meteor Charge","Meteor Strike","Flash Kick" "Spirit Breaking Cannon", "Energy Volley"}
 
 -- Function
 local attacks = { "Vital Strike", "Uppercut",
-                 "Vanish Strike"
+                 , "Vanish Strike"
                 }
 
 local RebValue = ""
@@ -1479,7 +1479,7 @@ end
                                                             Event:InvokeServer(A_1, A_2, A_3)
 
                                                         end)
-                                                         task.wait(.3)
+                                                        task.wait(.3)
                                                     else
 
                                                         game:GetService("ReplicatedStorage").Package.Events.p:FireServer(
@@ -1492,11 +1492,11 @@ end
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
                                                     
-
                                             end
                                             task.wait()
                                         until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                             game.Players.LocalPlayer.Character.Humanoid.Health <= 0
+                                            
                                         if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
                                             getgenv().stackneeded = true
                                             getgenv().dead = true
