@@ -1398,8 +1398,8 @@ end
                                         repeat
                                             task.wait()
                                             
-                                            if checkValue > 2100000 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                                10000 then -- op move stack 1
+                                            if checkValue > 200000 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                                5000 then -- op move stack 1
 
                                                 repeat
                                                    
@@ -1430,7 +1430,7 @@ end
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 10000
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 5000
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1439,8 +1439,8 @@ end
                                                         task.wait()
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                         game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 10000 and
-                                                        checkValue > 2100000
+                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 5000
+                                                        
 
                                                 end)
 
