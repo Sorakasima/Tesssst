@@ -1528,9 +1528,8 @@ end
 
                                                     end
                                                     task.wait()
-                                                until not autoFarmLoopRunning or v.Humanoid.Health > 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health > 10000 and
-                                                    checkValue > 2100000 
+                                                until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0
                                                     
 
                                             end
