@@ -998,7 +998,7 @@ local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Mach Kic
 
 -- Function
 local attacks = { "Vital Strike", "Uppercut",
-                 , "Vanish Strike"
+                 "Vanish Strike"
                 }
 
 local RebValue = ""
