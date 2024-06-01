@@ -651,12 +651,12 @@ local quests = {{
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
     requiredValue = 3000001,
-    endRange = 4500000,
+    endRange = 4000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 4500001,
+    requiredValue = 4000001,
     endRange = 25000000,
     planet = "Earth"
 }, {
