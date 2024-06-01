@@ -763,7 +763,7 @@ local function check1()
         if checkValue < 120000000 and game.placeId ~= 3311165597 then
             local A_1 = "Earth"
             local Event = game:GetService("ReplicatedStorage").Package.Events.TP
-             Event:InvokeServer(A_1)
+            Event:InvokeServer(A_1)
             task.wait(8)
         end
     end
