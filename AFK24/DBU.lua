@@ -994,10 +994,10 @@ end
 questneeded = false
 -- Function
 local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Mach Kick", "Wolf Fang Fist", "High Power Rush",
-                  "Meteor Strike", "Meteor Charge","Meteor Strike","Flash Kick" "Spirit Breaking Cannon", "Energy Volley"}
+                  "Meteor Strike", "Meteor Charge","Meteor Strike","Flash Kick", "Spirit Breaking Cannon", "Energy Volley"}
 
 -- Function
-local attacks = { "Vital Strike", "Uppercut",
+local attacks = { "Vital Strike", "Uppercut"
                  , "Vanish Strike"
                 }
 
