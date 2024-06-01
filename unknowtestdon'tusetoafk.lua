@@ -1426,7 +1426,8 @@ end
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 5000
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 10000
+
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1473,6 +1474,7 @@ end
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
                                                     game.Workspace.Living[targetted].Stats.Ki.Value < 1000
+
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1481,8 +1483,8 @@ end
                                                         task.wait()
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                         game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 10000 and
-                                                        checkValue > 2100000 
+                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 1000 and
+                                                        checkValue > 10000 
 
                                                 end)
                                                 
