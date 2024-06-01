@@ -994,7 +994,7 @@ end
 questneeded = false
 -- Function
 local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Mach Kick", "Wolf Fang Fist", "High Power Rush",
-                  "Meteor Strike", "Meteor Charge","Meteor Strike","Flash Kick" "Spirit Breaking Cannon", "Energy Volley"}
+                  "Meteor Strike", "Meteor Charge","Meteor Strike","Flash Kick", "Spirit Breaking Cannon", "Energy Volley"}
 
 -- Function
 local attacks = { "Vital Strike", "Uppercut",
@@ -1479,7 +1479,7 @@ end
                                                             Event:InvokeServer(A_1, A_2, A_3)
 
                                                         end)
-                                                        task.wait(.3)
+                                                         task.wait(.3)
                                                     else
 
                                                         game:GetService("ReplicatedStorage").Package.Events.p:FireServer(
@@ -1490,13 +1490,13 @@ end
                                                     end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
                                                     
+
                                             end
                                             task.wait()
                                         until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                             game.Players.LocalPlayer.Character.Humanoid.Health <= 0
-                                            
                                         if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
                                             getgenv().stackneeded = true
                                             getgenv().dead = true
