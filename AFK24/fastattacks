@@ -985,10 +985,9 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"God Slicer", "Spirit Barrage","Mach Kick", "Wolf Fang Fist", "Meteor Crash", "High Power Rush"}
+local attacks2 = {"God Slicer", "Spirit Barrage","Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush", "Spirit Breaking Cannon"}
 -- Function
-local attacks = { "Vital Strike", "Uppercut", "Meteor Charge","Meteor Strike", 
-		"Spirit Breaking Cannon", "Energy Volley", "Flash Kick", "Vanish Strike"}
+local attacks = {"Energy Volley", "Flash Kick", "Vanish Strike"}
 
 local RebValue = ""
 
@@ -1316,7 +1315,7 @@ check1()
                                 SelectedMobs1 = SelectedMobs
 
                                 checkValue = getCheckValue()
-                                if checkValue >= 200000000 and game.placeId ~= 5151400895 then
+                                if checkValue >= 120000000 and game.placeId ~= 5151400895 then
                                     SelectedQuests, SelectedMobs1 = "SSJG Kakata", "SSJG Kakata"
                                     local A_1 = "Vills Planet"
                                     local Event = game:GetService("ReplicatedStorage").Package.Events.TP
@@ -1437,13 +1436,13 @@ end
                                                     end) 
                                                     until spam == 10 or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value > 50
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value > 70
                                                     
                                                  
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 50
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 70
                                             else
                                                 task.spawn(function()
                                                     repeat
