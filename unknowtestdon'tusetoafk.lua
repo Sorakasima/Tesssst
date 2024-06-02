@@ -1412,18 +1412,19 @@ end
                                                                 game:GetService("ReplicatedStorage").Package.Events.mel:InvokeServer(
                                                                     A_1, A_2)
                                                             end)
-                                                        task.wait(.3)
+                                                        task.wait()
                                                             task.spawn(function()
                                                                 B_1 = "Energy Volley"
+                                                                B_3 = "Energy Blast"
                                                                 B_2 = {
                                                                     ["FaceMouse"] = false,
-                                                                    ["MouseHit"] = v
+                                                                    ["MouseHit"] = CFrame.new(0, 0, 0)
                                                                 }
                                                                 
                                                                 Event =
                                                                     game:GetService("ReplicatedStorage").Package.Events
                                                                         .voleys
-                                                                Event:InvokeServer(B_1, B_2, A_2)
+                                                                Event:InvokeServer(B_1, B_2, A_2, B_3)
                                                             
                                                             end)
                                                          
