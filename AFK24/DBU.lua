@@ -597,42 +597,42 @@ local quests = {{
     name = "Klirin",
     nickname = "Klirin",
     requiredValue = 10001,
-    endRange = 25000,
+    endRange = 20000,
     planet = "Earth"
 }, {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
-    requiredValue = 25001,
+    requiredValue = 20001,
     endRange = 50000,
     planet = "Earth"
 }, {
     name = "Radish",
     nickname = "Radish",
     requiredValue = 50001,
-    endRange = 100000,
+    endRange = 125000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 100001,
-    endRange = 200000,
+    requiredValue = 125001,
+    endRange = 220000,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 200001,
-    endRange = 350000,
+    requiredValue = 220001,
+    endRange = 370000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 350001,
-    endRange = 1250000,
+    requiredValue = 370001,
+    endRange = 1000000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 1250001,
+    requiredValue = 1000001,
     endRange = 1500000,
     planet = "Earth"
 }, {
@@ -663,12 +663,12 @@ local quests = {{
     name = "Broccoli",
     nickname = "Broccoli",
     requiredValue = 20000001,
-    endRange = 50000000,
+    endRange = 60000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 50000001,
+    requiredValue = 60000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
@@ -711,18 +711,18 @@ local quests = {{
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
     requiredValue = 2000000001,
-    endRange = 1500000000,
+    endRange = 3500000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 1500000001,
-    endRange = 2575000000,
+    requiredValue = 3500000001,
+    endRange = 5500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 2575000001,
+    requiredValue = 5500000000,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
