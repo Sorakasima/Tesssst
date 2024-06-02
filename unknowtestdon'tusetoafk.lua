@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/luca5432/Roblox-ANTI-AFK-SCRIPT/main/Script", true))()
+
 local loaded = false
  
    success, err = pcall(function()
@@ -985,9 +985,9 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"God Slicer", "Spirit Barrage","Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush" }
+local attacks2 = {"God Slicer", "Spirit Barrage","Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush"}
 -- Function
-local attacks = {"Energy Volley", "Spirit Breaking Cannon", "Flash Kick", "Vanish Strike"}
+local attacks = {"Energy Volley", "Flash Kick", "Vanish Strike"}
 
 local RebValue = ""
 
@@ -1390,30 +1390,10 @@ end
                                             puntype = "Destruction"
 
                                         end
-                                        
-                                        if checkValue >= 0 then
-                                            repeat
-                                                task.spawn(function()
-                                                    B_2 = {
-                                                        ["FaceMouse"] = false,
-                                                        ["MouseHit"] = CFrame.new(15932.0273, -12.8115005,
-                                                            15540.2061, 0.983303905, -0.0826973468, 0.162094966,
-                                                            0, 0.89077127, 0.454452157, -0.181971505,
-                                                            -0.446864575, 0.875898659)
-                                                    }
-                                                    task.wait()
-                                                    Event= game:GetService("ReplicatedStorage").Package.Events
-                                                    .voleys
-                                                    Event:InvokeServer(B_2)
-                                                end)
-                                                until not autoFarmLoopRunning or v.Humanoid.Health <=0 or
-                                                game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                checkValue >= 2000
-                                            end 
                                         repeat
                                             task.wait()
                                             
-                                            if checkValue >= 2000 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                            if checkValue >= 0 and game.Workspace.Living[targetted].Stats.Ki.Value >
                                                 100 then -- op move stack 1
 
                                                 repeat
@@ -1437,10 +1417,7 @@ end
                                                                 B_1 = "Energy Volley"
                                                                 B_2 = {
                                                                     ["FaceMouse"] = false,
-                                                                    ["MouseHit"] = CFrame.new(15932.0273, -12.8115005,
-                                                                        15540.2061, 0.983303905, -0.0826973468, 0.162094966,
-                                                                        0, 0.89077127, 0.454452157, -0.181971505,
-                                                                        -0.446864575, 0.875898659)
+                                                                    ["MouseHit"] = Echar
                                                                 }
                                                                 
                                                                 Event =
@@ -1456,13 +1433,13 @@ end
                                                     end) 
                                                     until spam == 10 or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 70
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value >= 100
                                                     
                                                  
                                                     task.wait(0.3)
-                                                until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
+                                                until v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 70
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value <= 100
                                             else
                                                 task.spawn(function()
                                                     repeat
