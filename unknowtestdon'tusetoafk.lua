@@ -1,4 +1,4 @@
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/luca5432/Roblox-ANTI-AFK-SCRIPT/main/Script", true))()
 local loaded = false
  
    success, err = pcall(function()
@@ -985,9 +985,9 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"God Slicer", "Spirit Barrage","Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush", "Spirit Breaking Cannon"}
+local attacks2 = {"God Slicer", "Spirit Barrage","Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush" }
 -- Function
-local attacks = {"Energy Volley", "Flash Kick", "Vanish Strike"}
+local attacks = {"Energy Volley", "Spirit Breaking Cannon", "Flash Kick", "Vanish Strike"}
 
 local RebValue = ""
 
@@ -1409,7 +1409,8 @@ end
                                                     Event:InvokeServer(B_1, B_2, A_2)
                                                 end)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <=0 or
-                                                game.Players.LocalPlayer.Character.Humanoid.Health <= 0
+                                                game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                checkValue >= 2000
                                             end 
                                         repeat
                                             task.wait()
