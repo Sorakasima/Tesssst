@@ -1391,9 +1391,7 @@ end
 
                                         end
                                         
-                                        if checkValue >= 0 and checkValue < 2000 and
-                                        game:GetService("ReplicatedStorage").Datas[game.Players.LocalPlayer.UserId].Quest.Value >=
-                                        "X Fighter Trainer" then
+                                        if checkValue >= 0
                                             repeat
                                                 task.spawn(function()
                                                     B_2 = {
@@ -1406,7 +1404,7 @@ end
                                                     task.wait()
                                                     Event= game:GetService("ReplicatedStorage").Package.Events
                                                     .voleys
-                                                    Event:InvokeServer(B_1, B_2, A_2)
+                                                    Event:InvokeServer(B_2)
                                                 end)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <=0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
@@ -1525,4 +1523,3 @@ end
         
     end
 end
-1
