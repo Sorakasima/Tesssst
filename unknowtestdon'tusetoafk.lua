@@ -1433,7 +1433,7 @@ end
                                                         wait(.1)
                                                     end) 
                                                     until spam == 10 or v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
                                                    
                                                     
                                                  
@@ -1447,8 +1447,7 @@ end
                                                             "Blacknwhite27", 1)
                                                         task.wait()
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 100
+                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
                                                         
 
                                                 end)
