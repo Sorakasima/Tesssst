@@ -1394,7 +1394,7 @@ end
                                             task.wait()
                                             
                                             if checkValue >= 0 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                                250 then -- op move stack 1
+                                                100 then -- op move stack 1
 
                                                 repeat
                                               
@@ -1417,7 +1417,7 @@ end
                                                                 B_1 = "Energy Volley"
                                                                 B_2 = {
                                                                     ["FaceMouse"] = false,
-                                                                    ["MouseHit"] = Echar
+                                                                    ["MouseHit"] = v
                                                                 }
                                                                 
                                                                 Event =
