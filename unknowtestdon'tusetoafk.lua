@@ -1458,7 +1458,7 @@ end
                                                     end) 
                                                     until spam == 10 or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value > 70
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 70
                                                     
                                                  
                                                     task.wait(0.3)
