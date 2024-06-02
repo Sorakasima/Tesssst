@@ -1415,10 +1415,10 @@ end
                                                         task.wait()
                                                             task.spawn(function()
                                                                 B_1 = "Energy Volley"
-                                                                B_3 = "Energy Blast"
+                                                                B_3 = "Wolf Fang Fist"
                                                                 B_2 = {
                                                                     ["FaceMouse"] = false,
-                                                                    ["MouseHit"] = CFrame.new(0, 0, 0)
+                                                                    ["MouseHit"] = Echar
                                                                 }
                                                                 
                                                                 Event =
@@ -1434,13 +1434,13 @@ end
                                                     end) 
                                                     until spam == 10 or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value >= 100
+                                                   
                                                     
                                                  
                                                     task.wait(0.3)
                                                 until v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value <= 100
+                                                    
                                             else
                                                 task.spawn(function()
                                                     repeat
