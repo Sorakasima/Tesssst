@@ -1417,7 +1417,7 @@ end
                                                             task.spawn(function()
                                                                 B_1 = "Energy Volley"
                                                                 B_2 = {
-                                                                    ["FaceMouse"] = false,
+                                                                    ["FaceMouse"] = true,
                                                                     ["MouseHit"] = Echar
                                                                 }
                                                                 
