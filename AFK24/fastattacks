@@ -1393,7 +1393,7 @@ end
                                         repeat
                                             task.wait()
                                             
-                                            if checkValue >= 0 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                            if checkValue >= 2000 and game.Workspace.Living[targetted].Stats.Ki.Value >
                                                 100 then -- op move stack 1
 
                                                 repeat
