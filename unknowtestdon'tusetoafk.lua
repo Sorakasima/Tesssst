@@ -726,6 +726,7 @@ local quests = {{
     planet = "Bills"
 }}
 
+                        
 
 
 local function check1()
@@ -1393,7 +1394,7 @@ end
                                         repeat
                                             task.wait()
                                             
-                                            if checkValue >= 0 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                            if checkValue >= 6250 and game.Workspace.Living[targetted].Stats.Ki.Value >
                                                 100 then -- op move stack 1
 
                                                 repeat
@@ -1415,7 +1416,6 @@ end
                                                         task.wait()
                                                             task.spawn(function()
                                                                 B_1 = "Energy Volley"
-                                                                B_3 = "Wolf Fang Fist"
                                                                 B_2 = {
                                                                     ["FaceMouse"] = false,
                                                                     ["MouseHit"] = Echar
@@ -1424,7 +1424,7 @@ end
                                                                 Event =
                                                                     game:GetService("ReplicatedStorage").Package.Events
                                                                         .voleys
-                                                                Event:InvokeServer(B_1, B_2, A_2, B_3)
+                                                                Event:InvokeServer(B_1, B_2, A_2)
                                                             
                                                             end)
                                                          
@@ -1432,14 +1432,16 @@ end
                                                         spam = spam + 1
                                                         wait(.1)
                                                     end) 
-                                                    until spam == 10 or v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
-                                                   
+                                                    until spam == 5 or v.Humanoid.Health <= 0 or
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value > 100
                                                     
                                                  
                                                     task.wait(0.3)
                                                 until v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 100
+                                                    
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1447,8 +1449,8 @@ end
                                                             "Blacknwhite27", 1)
                                                         task.wait()
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
-                                                        
+                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 100
 
                                                 end)
                                             end          
