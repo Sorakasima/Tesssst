@@ -1391,7 +1391,7 @@ end
 
                                         end
                                         
-                                        if checkValue >= 0
+                                        if checkValue >= 0 then
                                             repeat
                                                 task.spawn(function()
                                                     B_2 = {
