@@ -1393,7 +1393,7 @@ end
                                         repeat
                                             task.wait()
                                             
-                                            if checkValue >= 28000 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                            if checkValue >= 0 and game.Workspace.Living[targetted].Stats.Ki.Value >
                                                 250 then -- op move stack 1
 
                                                 repeat
@@ -1433,13 +1433,13 @@ end
                                                     end) 
                                                     until spam == 10 or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value >= 250
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value >= 100
                                                     
                                                  
                                                     task.wait(0.3)
                                                 until v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value <= 250
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value <= 100
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1448,7 +1448,7 @@ end
                                                         task.wait()
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                         game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 250
+                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 100
                                                         
 
                                                 end)
