@@ -591,54 +591,54 @@ local quests = {{
     name = "X Fighter Trainer",
     nickname = "X Fighter",
     requiredValue = 0,
-    endRange = 10000,
+    endRange = 30000,
     planet = "Earth"
 }, {
     name = "Klirin",
     nickname = "Klirin",
-    requiredValue = 10001,
-    endRange = 20000,
+    requiredValue = 30001,
+    endRange = 60000,
     planet = "Earth"
 }, {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
-    requiredValue = 20001,
-    endRange = 50000,
+    requiredValue = 60001,
+    endRange = 100000,
     planet = "Earth"
 }, {
     name = "Radish",
     nickname = "Radish",
-    requiredValue = 50001,
-    endRange = 125000,
+    requiredValue = 100001,
+    endRange = 200000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 125001,
-    endRange = 220000,
+    requiredValue = 200001,
+    endRange = 150500,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 220001,
-    endRange = 370000,
+    requiredValue = 150501,
+    endRange = 350000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 370001,
-    endRange = 1000000,
+    requiredValue = 350001,
+    endRange = 700000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 1000001,
-    endRange = 1500000,
+    requiredValue = 700001,
+    endRange = 1000000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 1500001,
+    requiredValue = 1000001,
     endRange = 2000000,
     planet = "Earth"
 }, {
@@ -651,18 +651,18 @@ local quests = {{
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
     requiredValue = 3000001,
-    endRange = 4000000,
+    endRange = 4500000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 4000001,
-    endRange = 20000000,
+    requiredValue = 4500001,
+    endRange = 25000000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 20000001,
+    requiredValue = 25000001,
     endRange = 60000000,
     planet = "Earth"
 }, {
@@ -675,12 +675,12 @@ local quests = {{
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 180000000,
+    endRange = 150000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 180000001,
+    requiredValue = 150000001,
     endRange = 300000000,
     planet = "Bills"
 }, {
@@ -693,36 +693,36 @@ local quests = {{
     name = "Vis (20%)",
     nickname = "Vis (20%)",
     requiredValue = 500000001,
-    endRange = 900000000,
+    endRange = 800000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 900000001,
-    endRange = 1350000000,
+    requiredValue = 800000001,
+    endRange = 1200000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 1350000001,
-    endRange = 2000000000,
+    requiredValue = 1200000001,
+    endRange = 2500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 2000000001,
-    endRange = 3500000000,
+    requiredValue = 2500000001,
+    endRange = 2650000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 3500000001,
-    endRange = 5500000000,
+    requiredValue = 2650000001,
+    endRange = 2875000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 5500000000,
+    requiredValue = 2875000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
@@ -987,8 +987,7 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush"}
-
+local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "Mach Kick", "Wolf Fang Fist", "Meteor Crash", "High Power Rush"}
 -- Function
 local attacks = { "Vital Strike", "Uppercut", "Meteor Charge","Meteor Strike", 
 		"Spirit Breaking Cannon", "Energy Volley", "Flash Kick", "Vanish Strike"}
