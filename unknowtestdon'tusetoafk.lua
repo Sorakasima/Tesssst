@@ -1433,14 +1433,13 @@ end
                                                         wait(.1)
                                                     end) 
                                                     until spam == 10 or v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0
                                                    
                                                     
                                                  
                                                     task.wait(0.3)
                                                 until v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
                                             else
                                                 task.spawn(function()
                                                     repeat
