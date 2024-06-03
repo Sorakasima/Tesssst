@@ -1417,7 +1417,7 @@ end
                                                             task.spawn(function()
                                                                 B_1 = "Energy Volley"
                                                                 B_2 = {
-                                                                    ["FaceMouse"] = true,
+                                                                    ["FaceMouse"] = false,
                                                                     ["MouseHit"] = CFrame.new(15932.0273, -12.8115005,
                                                                     15540.2061, 0.983303905, -0.0826973468, 0.162094966,
                                                                     0, 0.89077127, 0.454452157, -0.181971505,
