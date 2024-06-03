@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/luca5432/Roblox-ANTI-AFK-SCRIPT/main/Script", true))()
 
 local loaded = false
  
@@ -728,7 +729,6 @@ local quests = {{
 
                         
 
-
 local function check1()
     pcall(function()
     local checkValue = getCheckValue()
@@ -853,7 +853,8 @@ end
 
 for _, form in ipairs(PaidFormsList["Good"]) do
 
-    
+    print(string.format("Name: %s, ReqValue: %d, EndRangeValue: %d, Alignment: %s, RebirthReq: %d, FormOwned: %s",
+        form.name, form.reqvalue, form.endrangevalue, form.alignment, form.rebirthReq, tostring(form.formOwned)))
 
 end
 end)
@@ -986,9 +987,13 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"God Slicer", "Spirit Barrage","Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush"}
+local attacks2 = { "Super Dragon Fist", "God Slicer", "Spirit Barrage", 
+"Mach Kick","Meteor Crash", "Wolf Fang Fist", "High Power Rush"}
+
 -- Function
-local attacks = {"Energy Volley", "Flash Kick", "Vanish Strike"}
+local attacks = { "Vital Strike", "Uppercut",
+                 "Spirit Breaking Cannon", "Vanish Strike"
+                }
 
 local RebValue = ""
 
@@ -1177,7 +1182,7 @@ check1()
                     data = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId]
                     local formtouse;
 
-                    if transformStatus == true and game.Workspace.Living[targetted].Stats.Ki.Value > 250 and
+                    if transformStatus == true and game.Workspace.Living[targetted].Stats.Ki.Value > 300 and
                         game:GetService("ReplicatedStorage").Datas[game.Players.LocalPlayer.UserId].Quest.Value ~=
                         "X Fighter Trainer" then
 
@@ -1231,7 +1236,7 @@ check1()
                             end
                         until game.Players.LocalPlayer.Status.SelectedTransformation.Value ==
                             game.Players.LocalPlayer.Status.Transformation.Value or
-                            game.Workspace.Living[targetted].Stats.Ki.Value < 250
+                            game.Workspace.Living[targetted].Stats.Ki.Value < 300
                     end
 
                 end)
@@ -1394,69 +1399,68 @@ end
                                         repeat
                                             task.wait()
                                             
-                                            if checkValue >= 15000 or game.Workspace.Living[targetted].Stats.Ki.Value >
-                                                200 then -- op move stack 1
+                                            
 
-                                                repeat
-                                              
+                                                
+                                                   
+                                                   
+                                                        
+
+                                                
+                                                    if game.Workspace.Living[targetted].Stats.Ki.Value > 150 then
+													repeat
                                                         task.wait()
-                                                        A_2 = "Blacknwhite27"
-                                                        local spam = 0
                                                         local Event =
                                                             game:GetService("ReplicatedStorage").Package.Events.mel
-                                                        repeat
-                                                            task.spawn(function()
-                                                              
-                                                        for _, A_1 in ipairs(attacks2) do
-                                                            task.spawn(function()
-                                                                task.wait()
-                                                                game:GetService("ReplicatedStorage").Package.Events.mel:InvokeServer(
-                                                                    A_1, A_2)
-                                                            end)
-                                                        task.wait()
-                                                            task.spawn(function()
-                                                                B_1 = "Energy Volley"
-                                                                B_2 = {
-                                                                    ["FaceMouse"] = false,
-                                                                    ["MouseHit"] = CFrame.new(15932.0273, -12.8115005,
+                                                        local A_2 = "Blacknwhite27"
+                                                        task.spawn(function()
+                                                            local A_1 = "Mach Kick"
+                                                            Event:InvokeServer(A_1, A_2)
+
+                                                        end)
+                                                        task.spawn(function()
+                                                       														
+															A_4 = "Energy Volley"
+                                                            A_2 = {
+                                                                ["FaceMouse"] = false,
+                                                                ["MouseHit"] = CFrame.new(15932.0273, -12.8115005,
                                                                     15540.2061, 0.983303905, -0.0826973468, 0.162094966,
                                                                     0, 0.89077127, 0.454452157, -0.181971505,
                                                                     -0.446864575, 0.875898659)
-                                                                }
-                                                                
-                                                                Event =
-                                                                    game:GetService("ReplicatedStorage").Package.Events
-                                                                        .voleys
-                                                                Event:InvokeServer(B_1, B_2, A_2)
-                                                            
-                                                            end)
-                                                         
-                                                        end
-                                                        spam = spam + 1
-                                                        wait(.1)
-                                                    end) 
-                                                    until spam == 5 or v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value > 100
+                                                            }
+                                                            A_3 = "Blacknwhite27"
+                                                            Event =
+                                                                game:GetService("ReplicatedStorage").Package.Events
+                                                                    .voleys
+                                                            Event:InvokeServer(A_4, A_2, A_3)
+														end)
+															for _, A_1 in ipairs(attacks2) do
+																task.spawn(function()
+																	task.wait()
+																	game:GetService("ReplicatedStorage").Package.Events.mel:InvokeServer(
+																		A_1, A_3)
+															
+																	end)
+
+															
+															end
+                                                        task.wait()
                                                     
-                                                 
-                                                    task.wait(0.3)
-                                                until v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 100
-                                                    
-                                            else
-                                                task.spawn(function()
-                                                    repeat
+
                                                         game:GetService("ReplicatedStorage").Package.Events.p:FireServer(
                                                             "Blacknwhite27", 1)
-                                                        task.wait()
-                                                    until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                        game.Workspace.Living[targetted].Stats.Ki.Value > 100
 
-                                                end)
-                                            end          
+                                                        task.wait()
+
+                                                    
+                                                    task.wait()
+                                                until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 150
+                                                    
+
+                                            end
+                                            task.wait()
                                         until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                             game.Players.LocalPlayer.Character.Humanoid.Health <= 0
                                             
@@ -1485,7 +1489,7 @@ end
                        
                         
                     else
-                        warn("!!:", err1)
+                        warn("Error occurred:", err1)
                         questneeded = true
                     end
                 end
@@ -1496,7 +1500,7 @@ end
                 
                 
             else
-                warn("!!!:", err)
+                warn("Error occurred:", err)
                 questneeded = true
             end
             task.wait()
