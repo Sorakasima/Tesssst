@@ -1462,8 +1462,9 @@ end
                                             end
                                             task.wait()
                                         until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                            game.Players.LocalPlayer.Character.Humanoid.Health <= 0
-                                            
+                                            game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                             game.Workspace.Living[targetted].Stats.Ki.Value < 50
+											
                                         if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
                                             getgenv().stackneeded = true
                                             getgenv().dead = true
