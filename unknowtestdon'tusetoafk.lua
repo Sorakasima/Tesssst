@@ -1407,7 +1407,7 @@ end
                                                         
 
                                                 
-                                                    if game.Workspace.Living[targetted].Stats.Ki.Value > 150 then
+                                                    if game.Workspace.Living[targetted].Stats.Ki.Value >= 50 then
 													repeat
                                                         task.wait()
                                                         local Event =
@@ -1456,7 +1456,7 @@ end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 150
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 50
                                                     
 
                                             end
