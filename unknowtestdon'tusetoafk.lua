@@ -1414,7 +1414,7 @@ end
                                                             game:GetService("ReplicatedStorage").Package.Events.mel
                                                         local A_2 = "Blacknwhite27"
                                                         task.spawn(function()
-                                                            local A_1 = "Mach Kick"
+                                                            
                                                             Event:InvokeServer(A_1, A_2)
 
                                                         end)
