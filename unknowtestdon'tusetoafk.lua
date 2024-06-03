@@ -651,83 +651,83 @@ local quests = {{
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
     requiredValue = 3000001,
-    endRange = 4500000,
+    endRange = 4000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 4500001,
-    endRange = 25000000,
+    requiredValue = 4000001,
+    endRange = 12500000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 25000001,
-    endRange = 60000000,
+    requiredValue = 12500000,
+    endRange = 37500000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 60000001,
-    endRange = 120000000,
+    requiredValue = 37500001,
+    endRange = 50000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
-    requiredValue = 120000001,
-    endRange = 150000000,
+    requiredValue = 50000001,
+    endRange = 75000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 150000001,
-    endRange = 300000000,
+    requiredValue = 75000001,
+    endRange = 150000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 300000001,
-    endRange = 500000000,
+    requiredValue = 150000001,
+    endRange = 250000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 500000001,
-    endRange = 800000000,
+    requiredValue = 250000001,
+    endRange = 450000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 800000001,
-    endRange = 1200000000,
+    requiredValue = 450000001,
+    endRange = 675000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 1200000001,
-    endRange = 2500000000,
+    requiredValue = 675000001,
+    endRange = 1050000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 2500000001,
-    endRange = 2650000000,
+    requiredValue = 1050000001,
+    endRange = 1250000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2650000001,
-    endRange = 2875000000,
+    requiredValue = 1250000001,
+    endRange = 1375000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 2875000001,
+    requiredValue = 1375000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
 
-                        
+                    
 
 local function check1()
     pcall(function()
@@ -752,9 +752,9 @@ local function check1()
         end
     end
 
-    if checkValue <= 120000000 and game.placeId == 5151400895 then
+    if checkValue <= 50000000 and game.placeId == 5151400895 then
 
-        if checkValue < 120000000 and game.placeId ~= 3311165597 then
+        if checkValue < 50000000 and game.placeId ~= 3311165597 then
             local A_1 = "Earth"
             local Event = game:GetService("ReplicatedStorage").Package.Events.TP
             Event:InvokeServer(A_1)
@@ -1321,7 +1321,7 @@ check1()
                                 SelectedMobs1 = SelectedMobs
 
                                 checkValue = getCheckValue()
-                                if checkValue >= 120000000 and game.placeId ~= 5151400895 then
+                                if checkValue >= 50000000 and game.placeId ~= 5151400895 then
                                     SelectedQuests, SelectedMobs1 = "SSJG Kakata", "SSJG Kakata"
                                     local A_1 = "Vills Planet"
                                     local Event = game:GetService("ReplicatedStorage").Package.Events.TP
