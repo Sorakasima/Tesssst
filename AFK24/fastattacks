@@ -669,60 +669,60 @@ local quests = {{
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
     requiredValue = 37500001,
-    endRange = 100000000,
+    endRange = 120000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
-    requiredValue = 100000001,
-    endRange = 120000000,
-    planet = "Bills"
-}, {
-    name = "Wukong (Omen)",
-    nickname = "Wukong (Omen)",
     requiredValue = 120000001,
     endRange = 150000000,
     planet = "Bills"
 }, {
+    name = "Wukong (Omen)",
+    nickname = "Wukong (Omen)",
+    requiredValue = 150000001,
+    endRange = 200000000,
+    planet = "Bills"
+}, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 150000001,
-    endRange = 250000000,
+    requiredValue = 200000001,
+    endRange = 350000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 250000001,
-    endRange = 450000000,
+    requiredValue = 350000001,
+    endRange = 550000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 450000001,
-    endRange = 675000000,
+    requiredValue = 550000001,
+    endRange = 775000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 675000001,
-    endRange = 1050000000,
+    requiredValue = 775000001,
+    endRange = 1250000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 1050000001,
-    endRange = 1250000000,
+    requiredValue = 1250000001,
+    endRange = 1500000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 1250000001,
-    endRange = 1375000000,
+    requiredValue = 1500000001,
+    endRange = 1775000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 1375000001,
+    requiredValue = 1775000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
@@ -733,7 +733,7 @@ local function check1()
     pcall(function()
     local checkValue = getCheckValue()
 
-    if checkValue >= 100000000 and game.placeId ~= 5151400895 then
+    if checkValue >= 120000000 and game.placeId ~= 5151400895 then
         data = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId]
         if data.Zeni.Value >= 15000 then
 
@@ -752,9 +752,9 @@ local function check1()
         end
     end
 
-    if checkValue <= 100000000 and game.placeId == 5151400895 then
+    if checkValue <= 120000000 and game.placeId == 5151400895 then
 
-        if checkValue < 100000000 and game.placeId ~= 3311165597 then
+        if checkValue < 120000000 and game.placeId ~= 3311165597 then
             local A_1 = "Earth"
             local Event = game:GetService("ReplicatedStorage").Package.Events.TP
             Event:InvokeServer(A_1)
@@ -987,7 +987,7 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"God Slicer", "Spirit Barrage", 
+local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", 
 "Mach Kick","Meteor Crash", "Wolf Fang Fist", "High Power Rush"}
 
 -- Function
@@ -1321,7 +1321,7 @@ check1()
                                 SelectedMobs1 = SelectedMobs
 
                                 checkValue = getCheckValue()
-                                if checkValue >= 100000000 and game.placeId ~= 5151400895 then
+                                if checkValue >= 120000000 and game.placeId ~= 5151400895 then
                                     SelectedQuests, SelectedMobs1 = "SSJG Kakata", "SSJG Kakata"
                                     local A_1 = "Vills Planet"
                                     local Event = game:GetService("ReplicatedStorage").Package.Events.TP
@@ -1382,7 +1382,7 @@ end
                                                 
                                                 myChar.HumanoidRootPart.CFrame =
                                                     Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 2)
-                                                task.wait()    
+                                                task.wait(.1)    
                                                 myChar.HumanoidRootPart.CFrame =
                                                     Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, -2)
 
