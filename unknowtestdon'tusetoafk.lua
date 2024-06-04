@@ -1411,7 +1411,7 @@ end
                                                         
 
                                                 
-                                                    if game.Workspace.Living[targetted].Stats.Ki.Value >= 10 then
+                                                    if game.Workspace.Living[targetted].Stats.Ki.Value >= 30 then
 													repeat
                                                         task.wait()
                                                         local Event =
@@ -1460,14 +1460,14 @@ end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 10
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 30
                                                     
 
                                             end
                                             task.wait()
                                         until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                             game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                             game.Workspace.Living[targetted].Stats.Ki.Value < 10
+                                             game.Workspace.Living[targetted].Stats.Ki.Value < 30
 											
                                         if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
                                             getgenv().stackneeded = true
