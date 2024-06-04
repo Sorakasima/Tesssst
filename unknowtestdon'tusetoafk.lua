@@ -1382,10 +1382,10 @@ end
                                                 local myChar = game.Players.LocalPlayer.Character
                                                 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 2)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1)
                                                 task.wait(.3)    
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, -2)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, -1)
 
                                                 task.wait()
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
