@@ -597,12 +597,12 @@ local quests = {{
     name = "Klirin",
     nickname = "Klirin",
     requiredValue = 6251,
-    endRange = 22500 ,
+    endRange = 50000 ,
     planet = "Earth"
 }, {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
-    requiredValue = 22501,
+    requiredValue = 50001,
     endRange = 50000 ,
     planet = "Earth"
 }, {
@@ -633,96 +633,96 @@ local quests = {{
     name = "Chilly",
     nickname = "Chilly",
     requiredValue = 550001,
-    endRange = 1000000,
+    endRange = 900000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 1000001,
-    endRange = 1750000,
+    requiredValue = 900001,
+    endRange = 1300000,
     planet = "Earth"
 }, {
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
-    requiredValue = 1750001,
-    endRange = 2000001,
+    requiredValue = 1300001,
+    endRange = 1700000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 2000001,
-    endRange = 3000000,
+    requiredValue = 1700001,
+    endRange = 2000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 3000001,
-    endRange = 13500000,
+    requiredValue = 2000001,
+    endRange = 12500000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 13500001,
-    endRange = 40000000,
+    requiredValue = 12500001,
+    endRange = 37500000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 40000001,
+    requiredValue = 37500001,
     endRange = 120000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 150000000,
+    endRange = 120000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 150000001,
-    endRange = 220000000,
+    requiredValue = 120000001,
+    endRange = 150000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 220000001,
-    endRange = 370000000,
+    requiredValue = 150000001,
+    endRange = 300000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 370000001,
-    endRange = 650000000,
+    requiredValue = 300000001,
+    endRange = 450000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 650000001,
-    endRange = 875000000,
+    requiredValue = 450000001,
+    endRange = 675000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 875000001,
-    endRange = 1350000000,
+    requiredValue = 675000001,
+    endRange = 1250000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 1350000001,
-    endRange = 2250000000,
+    requiredValue = 1250000001,
+    endRange = 1750000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2250000001,
-    endRange = 2875000000,
+    requiredValue = 1750000001,
+    endRange = 2000000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 2875000001,
+    requiredValue = 2000000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
@@ -1382,7 +1382,7 @@ end
                                                 
                                                 myChar.HumanoidRootPart.CFrame =
                                                     Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 2)
-                                                task.wait()    
+                                                task.wait(.3)    
                                                 myChar.HumanoidRootPart.CFrame =
                                                     Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, -2)
 
@@ -1410,7 +1410,7 @@ end
                                                         
 
                                                 
-                                                    if game.Workspace.Living[targetted].Stats.Ki.Value >= 50 then
+                                                    if game.Workspace.Living[targetted].Stats.Ki.Value >= 30 then
 													repeat
                                                         task.wait()
                                                         local Event =
@@ -1459,14 +1459,14 @@ end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 50
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 30
                                                     
 
                                             end
                                             task.wait()
                                         until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                             game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                             game.Workspace.Living[targetted].Stats.Ki.Value < 50
+                                             game.Workspace.Living[targetted].Stats.Ki.Value < 30
 											
                                         if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
                                             getgenv().stackneeded = true
