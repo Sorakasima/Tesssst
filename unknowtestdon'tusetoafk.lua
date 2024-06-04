@@ -591,72 +591,72 @@ local quests = {{
     name = "X Fighter Trainer",
     nickname = "X Fighter",
     requiredValue = 0,
-    endRange = 30000,
+    endRange = 6250,
     planet = "Earth"
 }, {
     name = "Klirin",
     nickname = "Klirin",
-    requiredValue = 30001,
-    endRange = 60000,
+    requiredValue = 6251,
+    endRange = 12500 ,
     planet = "Earth"
 }, {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
-    requiredValue = 60001,
-    endRange = 100000,
+    requiredValue = 12501,
+    endRange = 25000 ,
     planet = "Earth"
 }, {
     name = "Radish",
     nickname = "Radish",
-    requiredValue = 100001,
-    endRange = 200000,
+    requiredValue = 25001,
+    endRange = 50000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 200001,
-    endRange = 150500,
+    requiredValue = 50001,
+    endRange = 112500,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 150501,
-    endRange = 350000,
+    requiredValue = 112501,
+    endRange = 187500,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 350001,
-    endRange = 700000,
+    requiredValue = 187501,
+    endRange = 550000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 700001,
-    endRange = 1000000,
+    requiredValue = 550001,
+    endRange = 875000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 1000001,
-    endRange = 2000000,
+    requiredValue = 875001,
+    endRange = 1250000,
     planet = "Earth"
 }, {
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
-    requiredValue = 2000001,
-    endRange = 3000000,
+    requiredValue = 1250001,
+    endRange = 1625000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 3000001,
-    endRange = 4000000,
+    requiredValue = 1625001,
+    endRange = 2000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 4000001,
+    requiredValue = 2000001,
     endRange = 12500000,
     planet = "Earth"
 }, {
