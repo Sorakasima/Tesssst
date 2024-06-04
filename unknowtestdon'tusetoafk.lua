@@ -669,18 +669,18 @@ local quests = {{
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
     requiredValue = 37500001,
-    endRange = 50000000,
+    endRange = 100000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
-    requiredValue = 50000001,
-    endRange = 75000000,
+    requiredValue = 100000001,
+    endRange = 120000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 75000001,
+    requiredValue = 120000001,
     endRange = 150000000,
     planet = "Bills"
 }, {
@@ -733,7 +733,7 @@ local function check1()
     pcall(function()
     local checkValue = getCheckValue()
 
-    if checkValue >= 120000000 and game.placeId ~= 5151400895 then
+    if checkValue >= 100000000 and game.placeId ~= 5151400895 then
         data = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId]
         if data.Zeni.Value >= 15000 then
 
@@ -752,9 +752,9 @@ local function check1()
         end
     end
 
-    if checkValue <= 50000000 and game.placeId == 5151400895 then
+    if checkValue <= 100000000 and game.placeId == 5151400895 then
 
-        if checkValue < 50000000 and game.placeId ~= 3311165597 then
+        if checkValue < 100000000 and game.placeId ~= 3311165597 then
             local A_1 = "Earth"
             local Event = game:GetService("ReplicatedStorage").Package.Events.TP
             Event:InvokeServer(A_1)
@@ -1321,7 +1321,7 @@ check1()
                                 SelectedMobs1 = SelectedMobs
 
                                 checkValue = getCheckValue()
-                                if checkValue >= 50000000 and game.placeId ~= 5151400895 then
+                                if checkValue >= 100000000 and game.placeId ~= 5151400895 then
                                     SelectedQuests, SelectedMobs1 = "SSJG Kakata", "SSJG Kakata"
                                     local A_1 = "Vills Planet"
                                     local Event = game:GetService("ReplicatedStorage").Package.Events.TP
