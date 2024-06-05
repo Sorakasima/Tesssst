@@ -1383,7 +1383,7 @@ end
                                                 
                                                 myChar.HumanoidRootPart.CFrame =
                                                     Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1)
-                                                task.wait(.3)    
+                                                task.wait(0.1)    
                                                 myChar.HumanoidRootPart.CFrame =
                                                     Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, -1)
 
