@@ -865,7 +865,7 @@ local function autostack(stack1)
     pcall(function()
         targetted = game.Players.LocalPlayer.name
         data = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId]
-        if stack1 == true and data.Energy.Value > 8000000 and getgenv().dead == false then
+        if stack1 == true and data.Energy.Value >= 8000000 and getgenv().dead == false then
             task.wait(1)
 
             game.workspace.Living[targetted].UpperTorso:Destroy()
@@ -1071,7 +1071,7 @@ while true do
                     success, err = pcall(function()
                         targetted = game.Players.LocalPlayer.name
                         data = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId]
-                        if stack1 == true and data.Energy.Value > 8000000 and getgenv().dead == false then
+                        if stack1 == true and data.Energy.Value >= 8000000 and getgenv().dead == false then
                             task.wait(1)
                 
                             game.workspace.Living[targetted].UpperTorso:Destroy()
