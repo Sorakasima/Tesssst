@@ -1442,7 +1442,7 @@ end
 
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
                                                 
                                             else
                                                 task.spawn(function()
@@ -1451,7 +1451,7 @@ end
                                                             "Blacknwhite27", 1)
                                                         task.wait()
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
                                                         
 
                                                 end)
@@ -1495,7 +1495,7 @@ end
                                                     end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
                                                    
 
                                             end
