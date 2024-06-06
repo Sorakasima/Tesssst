@@ -668,36 +668,36 @@ local quests = {{
     name = "Broccoli",
     nickname = "Broccoli",
     requiredValue = 30500001,
-    endRange = 100000000,
+    endRange = 40000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 100000000,
+    requiredValue = 40000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 210000000,
+    endRange = 150000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 210000001,
-    endRange = 600000000,
+    requiredValue = 150000001,
+    endRange = 300000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 600000001,
-    endRange = 250000000,
+    requiredValue = 300000001,
+    endRange = 600000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 250000001,
+    requiredValue = 600000001,
     endRange = 1000000000,
     planet = "Bills"
 }, {
