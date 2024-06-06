@@ -1,4 +1,4 @@
- loadstring(game:HttpGet("https://raw.githubusercontent.com/luca5432/Roblox-ANTI-AFK-SCRIPT/main/Script", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/luca5432/Roblox-ANTI-AFK-SCRIPT/main/Script", true))()
 
 local loaded = false
  
@@ -586,146 +586,154 @@ local FormsList = {
         rebirthReq = 24
     }}
 }
-
 local quests = {{
     name = "X Fighter Trainer",
     nickname = "X Fighter",
     requiredValue = 0,
-    endRange = 6250,
+    endRange = 30000,
     planet = "Earth"
 }, {
     name = "Klirin",
     nickname = "Klirin",
-    requiredValue = 6251,
-    endRange = 50000 ,
+    requiredValue = 30001,
+    endRange = 60000,
     planet = "Earth"
 }, {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
-    requiredValue = 50001,
-    endRange = 50000 ,
+    requiredValue = 60001,
+    endRange = 80000,
+    planet = "Earth"
+}, {
+    name = "Turtle Student",
+    nickname = "Turtle Student",
+    requiredValue = 80001,
+    endRange = 100000,
     planet = "Earth"
 }, {
     name = "Radish",
     nickname = "Radish",
-    requiredValue = 50001,
-    endRange = 100000,
+    requiredValue = 100001,
+    endRange = 200000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 100001,
-    endRange = 152500,
+    requiredValue = 200001,
+    endRange = 300000,
+    planet = "Earth"
+}, {
+    name = "Citizen",
+    nickname = "Evil Saya",
+    requiredValue = 300001,
+    endRange = 400000,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 152501,
-    endRange = 187500,
+    requiredValue = 400001,
+    endRange = 750000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 187501,
-    endRange = 550000,
+    requiredValue = 750001,
+    endRange = 1000000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 550001,
-    endRange = 900000,
+    requiredValue = 100001,
+    endRange = 1000000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 900001,
-    endRange = 1300000,
+    requiredValue = 1000001,
+    endRange = 9100000,
     planet = "Earth"
 }, {
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
-    requiredValue = 1300001,
-    endRange = 1700000,
-    planet = "Earth"
-}, {
-    name = "Kai-fist Master",
-    nickname = "Kai-fist Master",
-    requiredValue = 1700001,
-    endRange = 2000000,
+    requiredValue = 9100001,
+    endRange = 10000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 2000001,
-    endRange = 12500000,
+    requiredValue = 10000001,
+    endRange = 30500000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 12500001,
-    endRange = 37500000,
+    requiredValue = 30500001,
+    endRange = 100000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 37500001,
-    endRange = 60000000,
+    requiredValue = 100000000,
+    endRange = 120000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
-    requiredValue = 60000001,
-    endRange = 120000000,
+    requiredValue = 120000001,
+    endRange = 210000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 120000001,
-    endRange = 170000000,
+    requiredValue = 210000001,
+    endRange = 600000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 170000001,
-    endRange = 300000000,
+    requiredValue = 600000001,
+    endRange = 250000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 300000001,
-    endRange = 500000000,
+    requiredValue = 250000001,
+    endRange = 1000000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 500000001,
-    endRange = 705000000,
+    requiredValue = 1000000001,
+    endRange = 2500000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 705000001,
-    endRange = 1300000000,
+    requiredValue = 2500000001,
+    endRange = 3500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 1300000001,
-    endRange = 1550000000,
+    requiredValue = 3500000001,
+    endRange = 6500000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 1550000001,
-    endRange = 2000000000,
+    requiredValue = 6500000001,
+    endRange = 12000000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 2000000001,
-    endRange = 900000000000000000000000,
+    requiredValue = 12000000001,
+    endRange = 2000000000000000000,
     planet = "Bills"
 }}
+
+
+
 
            
 local function check1()
@@ -751,9 +759,9 @@ local function check1()
         end
     end
 
-    if checkValue <= 60000000 and game.placeId == 5151400895 then
+    if checkValue <= 120000000 and game.placeId == 5151400895 then
 
-        if checkValue < 60000000 and game.placeId ~= 3311165597 then
+        if checkValue < 120000000 and game.placeId ~= 3311165597 then
             local A_1 = "Earth"
             local Event = game:GetService("ReplicatedStorage").Package.Events.TP
             Event:InvokeServer(A_1)
@@ -1236,7 +1244,7 @@ check1()
                             end
                         until game.Players.LocalPlayer.Status.SelectedTransformation.Value ==
                             game.Players.LocalPlayer.Status.Transformation.Value or
-                            game.Workspace.Living[targetted].Stats.Ki.Value < 300
+                            game.Workspace.Living[targetted].Stats.Ki.Value < 250
                     end
 
                 end)
@@ -1321,7 +1329,7 @@ check1()
                                 SelectedMobs1 = SelectedMobs
 
                                 checkValue = getCheckValue()
-                                if checkValue >= 60000000 and game.placeId ~= 5151400895 then
+                                if checkValue >= 120000000 and game.placeId ~= 5151400895 then
                                     SelectedQuests, SelectedMobs1 = "SSJG Kakata", "SSJG Kakata"
                                     local A_1 = "Vills Planet"
                                     local Event = game:GetService("ReplicatedStorage").Package.Events.TP
@@ -1399,8 +1407,8 @@ end
                                         repeat
                                             task.wait()
                                             
-                                            if checkValue > 210000 and game.Workspace.Living[targetted].Stats.Ki.Value >
-                                                1000 then -- op move stack 1
+                                            if checkValue > 20000 and game.Workspace.Living[targetted].Stats.Ki.Value >
+                                                100 then -- op move stack 1
 
                                                 repeat
                                                    
@@ -1434,7 +1442,8 @@ end
 
                                                     task.wait(0.3)
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                
                                             else
                                                 task.spawn(function()
                                                     repeat
@@ -1442,13 +1451,13 @@ end
                                                             "Blacknwhite27", 1)
                                                         task.wait()
                                                     until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
+                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
                                                         
 
                                                 end)
 
                                                 repeat
-                                                    if game.Workspace.Living[targetted].Stats.Ki.Value > 200 then
+                                                    if game.Workspace.Living[targetted].Stats.Ki.Value > 100 then
 
                                                         task.wait()
                                                         local Event =
@@ -1486,9 +1495,8 @@ end
                                                     end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
-                                                    
-                                                    
+                                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
+                                                   
 
                                             end
                                             task.wait()
