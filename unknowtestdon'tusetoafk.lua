@@ -591,132 +591,132 @@ local quests = {{
     name = "X Fighter Trainer",
     nickname = "X Fighter",
     requiredValue = 0,
-    endRange = 6250,
+    endRange = 20000,
     planet = "Earth"
 }, {
     name = "Klirin",
     nickname = "Klirin",
-    requiredValue = 6251,
+    requiredValue = 20000,
     endRange = 50000 ,
     planet = "Earth"
 }, {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
     requiredValue = 50001,
-    endRange = 50000 ,
+    endRange = 100001 ,
     planet = "Earth"
 }, {
     name = "Radish",
     nickname = "Radish",
-    requiredValue = 50001,
-    endRange = 100000,
+    requiredValue = 100001,
+    endRange = 200000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 100001,
-    endRange = 152500,
+    requiredValue = 200001,
+    endRange = 222500,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 152501,
-    endRange = 187500,
+    requiredValue = 222501,
+    endRange = 325500,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 187501,
-    endRange = 550000,
+    requiredValue = 325501,
+    endRange = 950000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 550001,
-    endRange = 900000,
+    requiredValue = 950001,
+    endRange = 1500000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 900001,
-    endRange = 1300000,
+    requiredValue = 1500001,
+    endRange = 2000000,
     planet = "Earth"
 }, {
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
-    requiredValue = 1300001,
-    endRange = 1700000,
+    requiredValue = 2000001,
+    endRange = 2500000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 1700001,
-    endRange = 2000000,
+    requiredValue = 2500001,
+    endRange = 3500000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 2000001,
-    endRange = 12500000,
+    requiredValue = 3500001,
+    endRange = 15500000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 12500001,
-    endRange = 37500000,
+    requiredValue = 15500001,
+    endRange = 47500000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 37500001,
+    requiredValue = 47500001,
     endRange = 120000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 120000000,
+    endRange = 170000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 120000001,
-    endRange = 170000000,
+    requiredValue = 170000001,
+    endRange = 200000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 170000001,
-    endRange = 300000000,
+    requiredValue = 200000001,
+    endRange = 350000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 300000001,
-    endRange = 500000000,
+    requiredValue = 350000001,
+    endRange = 600000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 500000001,
-    endRange = 705000000,
+    requiredValue = 600000001,
+    endRange = 800000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 705000001,
+    requiredValue = 800000001,
     endRange = 1300000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
     requiredValue = 1300000001,
-    endRange = 1550000000,
+    endRange = 1500000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 1550000001,
+    requiredValue = 1500000001,
     endRange = 2000000000,
     planet = "Bills"
 }, {
