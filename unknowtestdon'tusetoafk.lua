@@ -656,18 +656,18 @@ local quests = {{
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
     requiredValue = 4000001,
-    endRange = 17000000,
+    endRange = 15000000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 17000001,
-    endRange = 75000001,
+    requiredValue = 15000001,
+    endRange = 50000001,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 75000001,
+    requiredValue = 50000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
