@@ -869,7 +869,7 @@ local function autostack(stack1)
             task.wait(1)
 
             game.workspace.Living[targetted].UpperTorso:Destroy()
-            task.wait(5.5)
+            task.wait(4.3)
             local Remote = game.ReplicatedStorage.Package.Events['equipskill']
             local Arguments = {
                 [1] = "Godly SSJ2"
@@ -1075,7 +1075,7 @@ while true do
                             task.wait(1)
                 
                             game.workspace.Living[targetted].UpperTorso:Destroy()
-                            task.wait(5.5)
+                            task.wait(4.3)
                             local Remote = game.ReplicatedStorage.Package.Events['equipskill']
                             local Arguments = {
                                 [1] = "Godly SSJ2"
