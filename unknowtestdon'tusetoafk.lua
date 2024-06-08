@@ -633,42 +633,42 @@ local quests = {{
     name = "Chilly",
     nickname = "Chilly",
     requiredValue = 950001,
-    endRange = 1500000,
+    endRange = 2000000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 1500001,
-    endRange = 2000000,
+    requiredValue = 2000001,
+    endRange = 3000000,
     planet = "Earth"
 }, {
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
-    requiredValue = 2000001,
-    endRange = 2500000,
+    requiredValue = 3000001,
+    endRange = 3500000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 2500001,
-    endRange = 3500000,
+    requiredValue = 3500001,
+    endRange = 4000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 3500001,
-    endRange = 15500000,
+    requiredValue = 4000001,
+    endRange = 17500000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 15500001,
-    endRange = 47500000,
+    requiredValue = 17500001,
+    endRange = 50000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 47500001,
+    requiredValue = 50000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
