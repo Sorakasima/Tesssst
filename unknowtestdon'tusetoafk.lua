@@ -1,4 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/luca5432/Roblox-ANTI-AFK-SCRIPT/main/Script", true))()
 
 local loaded = false
  
@@ -669,7 +668,7 @@ local quests = {{
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
     requiredValue = 75000001,
-    endRange = 150000000,
+    endRange = 120000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
