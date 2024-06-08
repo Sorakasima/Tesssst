@@ -710,18 +710,18 @@ local quests = {{
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
     requiredValue = 1500000001,
-    endRange = 2000000000,
+    endRange = 2300000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2000000001,
-    endRange = 2200000000,
+    requiredValue = 2300000001,
+    endRange = 2500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 2200000001,
+    requiredValue = 2500000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
