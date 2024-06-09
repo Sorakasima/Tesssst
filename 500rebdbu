@@ -1,4 +1,3 @@
-
 local loaded = false
  
    success, err = pcall(function()
@@ -641,15 +640,9 @@ local quests = {{
     endRange = 3000000,
     planet = "Earth"
 }, {
-    name = "SSJ2 Wukong",
-    nickname = "SSJ2 Wukong",
-    requiredValue = 3000001,
-    endRange = 3500000,
-    planet = "Earth"
-}, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 3500001,
+    requiredValue = 3000001,
     endRange = 4000000,
     planet = "Earth"
 }, {
