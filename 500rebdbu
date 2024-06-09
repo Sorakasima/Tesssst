@@ -644,7 +644,7 @@ local quests = {{
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
     requiredValue = 1500001,
-    endRange = 2000000,
+    endRange = 3000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
