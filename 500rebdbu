@@ -631,24 +631,24 @@ local quests = {{
     name = "Chilly",
     nickname = "Chilly",
     requiredValue = 1000001,
-    endRange = 1500000,
+    endRange = 1700000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 1500001,
-    endRange = 2000000,
+    requiredValue = 1700001,
+    endRange = 2600000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 2000001,
-    endRange = 3000000,
+    requiredValue = 2600001,
+    endRange = 3600000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 3000001,
+    requiredValue = 3600001,
     endRange = 15000000,
     planet = "Earth"
 }, {
@@ -667,12 +667,12 @@ local quests = {{
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 145000000,
+    endRange = 140000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 145000001,
+    requiredValue = 140000001,
     endRange = 200000000,
     planet = "Bills"
 }, {
