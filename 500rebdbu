@@ -67,7 +67,7 @@ function format_number(number)
     local suffix_index = 1
 
     while math.abs(number) >= 1000 and suffix_index < #suffixes do
-        number = number / 1000
+        number = number / 1000.0
         suffix_index = suffix_index + 1
     end
 
@@ -183,7 +183,7 @@ local PaidFormsList = {
     }, {
         name = "SSJB4",
         reqvalue = 50000001,
-        endrangevalue = 1e+23,
+        endrangevalue = 100000000000000000000000,
         alignment = "Neutral",
         rebirthReq = 13,
         formOwned = false,
@@ -191,7 +191,7 @@ local PaidFormsList = {
     }, {
         name = "Blanco",
         reqvalue = 120000001,
-        endrangevalue = 1e+23,
+        endrangevalue = 100000000000000000000000,
         alignment = "Neutral",
         rebirthReq = 24,
         formOwned = false,
@@ -288,7 +288,7 @@ local PaidFormsList = {
     }, {
         name = "Blanco",
         reqvalue = 120000001,
-        endrangevalue = 1e+23,
+        endrangevalue = 100000000000000000000000,
         alignment = "Neutral",
         rebirthReq = 24,
         formOwned = false,
@@ -439,7 +439,7 @@ local FormsList = {
     }, {
         name = "Beast",
         reqvalue = 120000001,
-        endrangevalue = 1.2e+34,
+        endrangevalue = 12000000000000000000000000000000000,
         alignment = "Neutral",
         rebirthReq = 24
     }}, -- close evil
@@ -579,7 +579,7 @@ local FormsList = {
     }, {
         name = "Beast",
         reqvalue = 120000001,
-        endrangevalue = 1.2e+34,
+        endrangevalue = 12000000000000000000000000000000000,
         alignment = "Neutral",
         rebirthReq = 24
     }}
@@ -619,12 +619,12 @@ local quests = {{
     name = "Top X Fighter",
     nickname = "X Fighter Master",
     requiredValue = 250001,
-    endRange = 400000,
+    endRange = 450000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 400001,
+    requiredValue = 450001,
     endRange = 900000,
     planet = "Earth"
 }, {
@@ -715,7 +715,7 @@ local quests = {{
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
     requiredValue = 2300000001,
-    endRange = 9e+23,
+    endRange = 900000000000000000000000,
     planet = "Bills"
 }}
                
@@ -871,7 +871,7 @@ local function autostack(stack1)
             repeat
                 Remote:InvokeServer(unpack(Arguments))
                 i = i + 1
-                task.wait(0.1)
+                task.wait(.1)
             until i == 8
             task.wait()
             getgenv().stackneeded = false
@@ -1077,7 +1077,7 @@ while true do
                             repeat
                                 Remote:InvokeServer(unpack(Arguments))
                                 i = i + 1
-                                task.wait(0.1)
+                                task.wait(.1)
                             until i == 8
                             task.wait()
                             getgenv().stackneeded = false
@@ -1232,7 +1232,7 @@ check1()
                     end
 
                 end)
-                task.wait(0.5)
+                task.wait(.5)
             end
         end)
         charge = true
