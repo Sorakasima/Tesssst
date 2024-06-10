@@ -67,7 +67,7 @@ function format_number(number)
     local suffix_index = 1
 
     while math.abs(number) >= 1000 and suffix_index < #suffixes do
-        number = number / 1000.0
+        number = number / 1000
         suffix_index = suffix_index + 1
     end
 
@@ -183,7 +183,7 @@ local PaidFormsList = {
     }, {
         name = "SSJB4",
         reqvalue = 50000001,
-        endrangevalue = 100000000000000000000000,
+        endrangevalue = 1e+23,
         alignment = "Neutral",
         rebirthReq = 13,
         formOwned = false,
@@ -191,7 +191,7 @@ local PaidFormsList = {
     }, {
         name = "Blanco",
         reqvalue = 120000001,
-        endrangevalue = 100000000000000000000000,
+        endrangevalue = 1e+23,
         alignment = "Neutral",
         rebirthReq = 24,
         formOwned = false,
@@ -288,7 +288,7 @@ local PaidFormsList = {
     }, {
         name = "Blanco",
         reqvalue = 120000001,
-        endrangevalue = 100000000000000000000000,
+        endrangevalue = 1e+23,
         alignment = "Neutral",
         rebirthReq = 24,
         formOwned = false,
@@ -439,7 +439,7 @@ local FormsList = {
     }, {
         name = "Beast",
         reqvalue = 120000001,
-        endrangevalue = 12000000000000000000000000000000000,
+        endrangevalue = 1.2e+34,
         alignment = "Neutral",
         rebirthReq = 24
     }}, -- close evil
@@ -579,7 +579,7 @@ local FormsList = {
     }, {
         name = "Beast",
         reqvalue = 120000001,
-        endrangevalue = 12000000000000000000000000000000000,
+        endrangevalue = 1.2e+34,
         alignment = "Neutral",
         rebirthReq = 24
     }}
@@ -595,18 +595,18 @@ local quests = {{
     name = "Klirin",
     nickname = "Klirin",
     requiredValue = 10000,
-    endRange = 40000 ,
+    endRange = 30000 ,
     planet = "Earth"
 }, {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
-    requiredValue = 40001,
-    endRange = 500000 ,
+    requiredValue = 30001,
+    endRange = 60000 ,
     planet = "Earth"
 }, {
     name = "Radish",
     nickname = "Radish",
-    requiredValue = 500001,
+    requiredValue = 60001,
     endRange = 125000,
     planet = "Earth"
 }, {
@@ -619,36 +619,36 @@ local quests = {{
     name = "Top X Fighter",
     nickname = "X Fighter Master",
     requiredValue = 250001,
-    endRange = 450000,
+    endRange = 400000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 450001,
-    endRange = 1000000,
+    requiredValue = 400001,
+    endRange = 900000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 1000001,
-    endRange = 1700000,
+    requiredValue = 900001,
+    endRange = 2300000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 1700001,
-    endRange = 2600000,
+    requiredValue = 2300001,
+    endRange = 3700000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 2600001,
-    endRange = 3600000,
+    requiredValue = 3700001,
+    endRange = 5000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 3600001,
+    requiredValue = 5000001,
     endRange = 15000000,
     planet = "Earth"
 }, {
@@ -679,12 +679,12 @@ local quests = {{
     name = "Vills (50%)",
     nickname = "Vills (50%)",
     requiredValue = 200000001,
-    endRange = 300000000,
+    endRange = 350000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 300000001,
+    requiredValue = 350000001,
     endRange = 500000000,
     planet = "Bills"
 }, {
@@ -697,12 +697,12 @@ local quests = {{
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
     requiredValue = 800000001,
-    endRange = 1300000000,
+    endRange = 1400000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 1300000001,
+    requiredValue = 1400000001,
     endRange = 1800000000,
     planet = "Bills"
 }, {
@@ -715,7 +715,7 @@ local quests = {{
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
     requiredValue = 2300000001,
-    endRange = 900000000000000000000000,
+    endRange = 9e+23,
     planet = "Bills"
 }}
                
@@ -871,7 +871,7 @@ local function autostack(stack1)
             repeat
                 Remote:InvokeServer(unpack(Arguments))
                 i = i + 1
-                task.wait(.1)
+                task.wait(0.1)
             until i == 8
             task.wait()
             getgenv().stackneeded = false
@@ -1077,7 +1077,7 @@ while true do
                             repeat
                                 Remote:InvokeServer(unpack(Arguments))
                                 i = i + 1
-                                task.wait(.1)
+                                task.wait(0.1)
                             until i == 8
                             task.wait()
                             getgenv().stackneeded = false
@@ -1232,7 +1232,7 @@ check1()
                     end
 
                 end)
-                task.wait(.5)
+                task.wait(0.5)
             end
         end)
         charge = true
@@ -1395,7 +1395,7 @@ end
                                             
 
                                                 
-                                                    if game.Workspace.Living[targetted].Stats.Ki.Value >= 1 then
+                                                    if game.Workspace.Living[targetted].Stats.Ki.Value >= 10 then
 													repeat
                                                         task.wait()
                                                         local Event =
@@ -1444,7 +1444,7 @@ end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 1
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 10
                                                     
 
                                             end
