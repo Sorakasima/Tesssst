@@ -625,24 +625,24 @@ local quests = {{
     name = "Super Vegetable",
     nickname = "Super Vegetable",
     requiredValue = 450001,
-    endRange = 900000,
+    endRange = 1000000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 900001,
-    endRange = 2300000,
+    requiredValue = 1000001,
+    endRange = 3500000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 2300001,
-    endRange = 3700000,
+    requiredValue = 3500001,
+    endRange = 4500000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 3700001,
+    requiredValue = 4500001,
     endRange = 5000000,
     planet = "Earth"
 }, {
