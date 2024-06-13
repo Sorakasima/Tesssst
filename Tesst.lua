@@ -80,12 +80,12 @@ return {{
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 150000001,
-    endRange = 180000000,
+    endRange = 200000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 180000001,
+    requiredValue = 200000001,
     endRange = 300000000,
     planet = "Bills"
 }, {
