@@ -74,24 +74,24 @@ return {{
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
     requiredValue = 50000001,
-    endRange = 200000000,
+    endRange = 150000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
-    requiredValue = 200000001,
-    endRange = 250000000,
+    requiredValue = 150000001,
+    endRange = 200000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 250000001,
-    endRange = 350000000,
+    requiredValue = 200000001,
+    endRange = 300000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 350000001,
+    requiredValue = 300000001,
     endRange = 500000000,
     planet = "Bills"
 }, {
