@@ -685,12 +685,12 @@ local quests = {{
     name = "Vis (20%)",
     nickname = "Vis (20%)",
     requiredValue = 400000001,
-    endRange = 600000000,
+    endRange = 650000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 600000001,
+    requiredValue = 650000001,
     endRange = 800000000,
     planet = "Bills"
 }, {
@@ -979,7 +979,7 @@ end
 questneeded = false
 -- Function
 local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", 
-"Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush","Meteor Strike", "Spirit Breaking Cannon", "Meteor Charge", 
+"Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush","Meteor Strike", "Meteor Charge", 
 "Flash Kick", "Uppercut", "Vanish Strike", "Bone Crusher", "Vital Strike" , "Sledgehammer"}
 
 -- Function
