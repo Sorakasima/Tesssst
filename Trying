@@ -1374,8 +1374,10 @@ end
                                                 
                                                 myChar.HumanoidRootPart.CFrame =
                                                     Echar:GetPrimaryPartCFrame() * CFrame.new(0, 1, 1)
-wait(.3)
-                   Echar:GetPrimaryPartCFrame() * CFrame.new(0, -1, 1)                         
+					task.wait(.3)
+						myChar.HumanoidRootPart.CFrame =
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, -1, 1)
+                                            
                                                           				                    
                                                 task.wait()
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
