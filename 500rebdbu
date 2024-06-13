@@ -667,24 +667,24 @@ local quests = {{
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 140000000,
+    endRange = 150000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 140000001,
+    requiredValue = 150000001,
     endRange = 200000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
     requiredValue = 200000001,
-    endRange = 350000000,
+    endRange = 400000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 350000001,
+    requiredValue = 400000001,
     endRange = 600000000,
     planet = "Bills"
 }, {
@@ -1034,8 +1034,9 @@ local event = game:GetService("ReplicatedStorage").Package.Events.drain
 				return OldHook(self, ...)
 			end)
         end)
-game:GetService("Workspace").Others.BossMaps:Destroy()
-game:GetService("Workspace").Others.Map:Destroy()
+game:GetService("Lighting").Sky:Destroy()
+game:GetService("Lighting").Bloom:Destroy()
+game:GetService("Lighting").Blur:Destroy()
 
 questneeded = true
 SelectedMobs1 = ""
@@ -1365,39 +1366,40 @@ end
                                                                                                          Vector3.new(0,
                                                 0, 0)
                                         
+                                        
 
                                         local Echar = v
                                         local t
                                         local db = false
                                         task.spawn(function()
                                         t=0
-                                                                                    repeat
-                                                                                       if db then
-                                                                                        if t < 5 then
-                                                                                         t=t+1
-                                                                                        local myChar = game.Players.LocalPlayer.Character
-                                        
-                                                                                        myChar.HumanoidRootPart.CFrame =
-                                                                                            Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1)
-                                                                                           elseif t == 5 then
-                                                                                               db = false
-                                                                                                 t = 0
-                                                                                               end
-                                                                                             elseif not db then
-                                                                                             if t < 5 then
-                                                                                               t=t+1
-                                                                                              local myChar = game.Players.LocalPlayer.Character
-                                                                                             myChar.HumanoidRootPart.CFrame =
-                                                                                            Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, -1)
-                                                                                              elseif t == 5 then
-                                                                                               db = true
-                                                                                                 t = 0
-                                                                                               end
-                                                                                        end
-                                                                                        task.wait()
-                                                                                    until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
-                                                                                        game.Players.LocalPlayer.Character.Humanoid.Health <= 0
-                                                                                end)
+                                            repeat
+                                               if db then
+                                                if t < 5 then
+                                                 t=t+1
+                                                local myChar = game.Players.LocalPlayer.Character
+
+                                                myChar.HumanoidRootPart.CFrame =
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1)
+                                                   elseif t == 5 then
+                                                       db = false
+                                                         t = 0
+                                                       end
+                                                     elseif not db then
+                                                     if t < 5 then
+                                                       t=t+1
+                                                      local myChar = game.Players.LocalPlayer.Character
+                                                     myChar.HumanoidRootPart.CFrame =
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, -1, 1)
+                                                      elseif t == 5 then
+                                                       db = true
+                                                         t = 0
+                                                       end
+                                                end
+                                                task.wait()
+                                            until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
+                                                game.Players.LocalPlayer.Character.Humanoid.Health <= 0
+                                        end)
 
                                         task.wait(0.2)
                                         local alignment = data.Allignment.Value
