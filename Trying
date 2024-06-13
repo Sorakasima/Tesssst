@@ -982,7 +982,7 @@ local camera = workspace.CurrentCamera
 coem:BindToRenderStep("LockCamera", 201, function()
     local Nuggert = game.Player.LocalPlayer.Character.GetPrimaryPart.CFrame
     camera.CameraType = Enum.CameraType.Scriptable
-    camera.CFrame = Nuggert * CFrame.new(4,2,8)
+    camera.CFrame = Nuggert * CFrame.new(4, 2, 8)
 end)
 
 questneeded = false
