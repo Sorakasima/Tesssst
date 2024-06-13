@@ -976,6 +976,15 @@ local function getQuest(switch1)
     end
 
 end
+
+coem = game:GetService("RunService")
+local camera = workspace.CurrentCamera
+coem:BindToRenderStep("LockCamera", 201, function()
+    local Nuggert = game.Player.LocalPlayer.Character.GetPrimaryPart.CFrame
+    camera.CameraType = Enum.CameraType.Scriptable
+    camera.CFrame = Nuggert * CFrame.new(4,2,8)
+end)
+
 questneeded = false
 -- Function
 local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", 
@@ -1373,10 +1382,7 @@ end
                                                 local myChar = game.Players.LocalPlayer.Character
                                                 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 1, 1)
-					task.wait(.3)
-						myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, -1, 1)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1)
                                             
                                                           				                    
                                                 task.wait()
