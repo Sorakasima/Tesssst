@@ -68,12 +68,12 @@ return { {
     name = "Broccoli",
     nickname = "Broccoli",
     requiredValue = 17500001,
-    endRange = 150000000,
+    endRange = 50000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 50000000,
+    requiredValue = 50000001,
     endRange = 150000000,
     planet = "Earth"
 }, {
