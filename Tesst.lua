@@ -85,7 +85,7 @@ return {{
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 150000002,
+    requiredValue = 180000001,
     endRange = 300000000,
     planet = "Bills"
 }, {
