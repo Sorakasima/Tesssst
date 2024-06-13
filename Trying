@@ -977,13 +977,6 @@ local function getQuest(switch1)
 
 end
 
-coem = game:GetService("RunService")
-local camera = workspace.CurrentCamera
-coem:BindToRenderStep("LockCamera", 201, function()
-    local Nuggert = game.Player.LocalPlayer.Character.GetPrimaryPart.CFrame
-    camera.CameraType = Enum.CameraType.Scriptable
-    camera.CFrame = Nuggert * CFrame.new(4, 2, 8)
-end)
 
 questneeded = false
 -- Function
@@ -1389,6 +1382,20 @@ end
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0
                                         end)
+                                        
+                                        task.spawn(function()
+                                        repeat 
+                                            coem = game:GetService("RunService")
+                                            local camera = workspace.CurrentCamera
+                                        coem:BindToRenderStep("LockCamera", 201, function()
+                                            local Nuggert = game.Player.LocalPlayer.Character.GetPrimaryPart.CFrame
+                                            camera.CameraType = Enum.CameraType.Scriptable
+                                            camera.CFrame = Nuggert * CFrame.new(4, 2, 8)
+                                        end)
+                                    
+                                    until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
+                                    game.Players.LocalPlayer.Character.Humanoid.Health <= 0 
+                                end)
 
                                         task.wait(0.2)
                                         local alignment = data.Allignment.Value
