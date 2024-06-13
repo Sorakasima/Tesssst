@@ -98,36 +98,36 @@ return {{
     name = "Vis (20%)",
     nickname = "Vis (20%)",
     requiredValue = 500000001,
-    endRange = 600000000,
+    endRange = 800000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 600000001,
-    endRange = 870000000,
+    requiredValue = 800000001,
+    endRange = 1250000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 870000001,
-    endRange = 1350000000,
+    requiredValue = 1250000001,
+    endRange = 1950000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 1350000001,
-    endRange = 2700000000,
+    requiredValue = 1950000001,
+    endRange = 2400000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2700000001,
-    endRange = 2900000000,
+    requiredValue = 2400000001,
+    endRange = 2700000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 2900000001,
+    requiredValue = 2700000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
