@@ -1367,15 +1367,34 @@ end
                                         
 
                                         local Echar = v
-                                        task.spawn(function()
+                                       GEN Đại Cẩu — Today at 1:17 PM
+local t
+local db = false
+task.spawn(function()
+t=0
                                             repeat
-
+                                               if db then
+                                                if t < 20 then
+                                                 t=t+1
                                                 local myChar = game.Players.LocalPlayer.Character
-                                                
+
                                                 myChar.HumanoidRootPart.CFrame =
                                                     Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 2)
-                                            
-                                                          				                    
+                                                   elseif t == 20 then
+                                                       db = false
+                                                         t = 0
+                                                       end
+                                                     elseif not db then
+                                                     if t < 20 then
+                                                       t=t+1
+                                                      local myChar = game.Players.LocalPlayer.Character
+                                                     myChar.HumanoidRootPart.CFrame =
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, -2)
+                                                      elseif t == 20 then
+                                                       db = true
+                                                         t = 0
+                                                       end
+                                                end
                                                 task.wait()
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0
