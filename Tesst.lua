@@ -86,12 +86,12 @@ return { {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
     requiredValue = 200000001,
-    endRange = 300000000,
+    endRange = 350000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 300000001,
+    requiredValue = 350000001,
     endRange = 500000000,
     planet = "Bills"
 }, {
