@@ -68,7 +68,7 @@ return { {
     name = "Broccoli",
     nickname = "Broccoli",
     requiredValue = 15000001,
-    endRange = 50000001,
+    endRange = 80000001,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
