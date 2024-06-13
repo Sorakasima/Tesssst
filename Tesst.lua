@@ -104,12 +104,12 @@ return {{
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
     requiredValue = 720000001,
-    endRange = 1500000000,
+    endRange = 1200000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 1500000001,
+    requiredValue = 1200000001,
     endRange = 2000000000,
     planet = "Bills"
 }, {
