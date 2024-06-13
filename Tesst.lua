@@ -1,4 +1,4 @@
-return { {
+return {{
     name = "X Fighter Trainer",
     nickname = "X Fighter",
     requiredValue = 0,
@@ -20,24 +20,24 @@ return { {
     name = "Radish",
     nickname = "Radish",
     requiredValue = 60001,
-    endRange = 125000,
+    endRange = 150000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 125001,
-    endRange = 250000,
+    requiredValue = 150001,
+    endRange = 300000,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 250001,
-    endRange = 450000,
+    requiredValue = 300001,
+    endRange = 550000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 450001,
+    requiredValue = 550001,
     endRange = 1000000,
     planet = "Earth"
 }, {
@@ -50,12 +50,12 @@ return { {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
     requiredValue = 3500001,
-    endRange = 4500000,
+    endRange = 4000000,
     planet = "Earth"
 }, {
-    name = "Kai-fist Master",
-    nickname = "Kai-fist Master",
-    requiredValue = 4500001,
+    name = "SSJ2 Wukong",
+    nickname = "SSJ2 Wukong",
+    requiredValue = 4000001,
     endRange = 5000000,
     planet = "Earth"
 }, {
@@ -68,66 +68,66 @@ return { {
     name = "Broccoli",
     nickname = "Broccoli",
     requiredValue = 15000001,
-    endRange = 80000001,
+    endRange = 50000001,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
     requiredValue = 50000001,
-    endRange = 200000000,
+    endRange = 120000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
-    requiredValue = 200000001,
-    endRange = 250000000,
+    requiredValue = 120000001,
+    endRange = 200000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 250000001,
+    requiredValue = 200000001,
     endRange = 350000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
     requiredValue = 350000001,
-    endRange = 450000000,
+    endRange = 500000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 450000001,
-    endRange = 700000000,
+    requiredValue = 500000001,
+    endRange = 720000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 700000001,
-    endRange = 1000000000,
+    requiredValue = 720000001,
+    endRange = 1500000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 1000000001,
+    requiredValue = 1500000001,
     endRange = 2000000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
     requiredValue = 2000000001,
-    endRange = 2500000000,
+    endRange = 3000000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2500000001,
-    endRange = 3000000000,
+    requiredValue = 3000000001,
+    endRange = 4000000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 3000000001,
+    requiredValue = 4000000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
