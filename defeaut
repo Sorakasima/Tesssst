@@ -50,12 +50,12 @@ return { {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
     requiredValue = 750001,
-    endRange = 800000,
+    endRange = 1000000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 800001,
+    requiredValue = 100001,
     endRange = 1000000,
     planet = "Earth"
 }, {
