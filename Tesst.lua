@@ -116,18 +116,18 @@ return {  {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
     requiredValue = 1600000001,
-    endRange = 2200000000,
+    endRange = 2800000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2200000001,
-    endRange = 2800000000,
+    requiredValue = 2800000001,
+    endRange = 3300000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 2800000001,
+    requiredValue = 3300000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }  }
