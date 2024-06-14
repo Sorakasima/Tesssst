@@ -92,18 +92,18 @@ return {  {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
     requiredValue = 300000001,
-    endRange = 450000000,
+    endRange = 500000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 450000001,
-    endRange = 700000000,
+    requiredValue = 500000001,
+    endRange = 1000000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 700000001,
+    requiredValue = 1000000001,
     endRange = 2000000000,
     planet = "Bills"
 }, {
