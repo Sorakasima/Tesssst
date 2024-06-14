@@ -14,30 +14,30 @@ return {  {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
     requiredValue = 30001,
-    endRange = 60000 ,
+    endRange = 100000 ,
     planet = "Earth"
 }, {
     name = "Radish",
     nickname = "Radish",
-    requiredValue = 60001,
-    endRange = 125000,
+    requiredValue = 100001,
+    endRange = 200000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 125001,
-    endRange = 250000,
+    requiredValue = 200001,
+    endRange = 400000,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 250001,
-    endRange = 450000,
+    requiredValue = 400001,
+    endRange = 750000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 450001,
+    requiredValue = 750001,
     endRange = 1000000,
     planet = "Earth"
 }, {
@@ -50,30 +50,30 @@ return {  {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
     requiredValue = 3500001,
-    endRange = 4500000,
+    endRange = 7500000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 4500001,
-    endRange = 5000000,
+    requiredValue = 7500001,
+    endRange = 9000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 5000001,
-    endRange = 15000000,
+    requiredValue = 9000001,
+    endRange = 20500000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 15000001,
-    endRange = 50000001,
+    requiredValue = 20500001,
+    endRange = 70000001,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 50000001,
+    requiredValue = 70000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
