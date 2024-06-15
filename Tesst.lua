@@ -115,7 +115,7 @@ return {  {
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 2700000001,
+    requiredValue = 2700000000,
     endRange = 4000000000,
     planet = "Bills"
 }, {
