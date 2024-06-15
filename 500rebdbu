@@ -978,7 +978,7 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", 
+local attacks2 = {"Flash Kich", "Super Dragon Fist", "God Slicer", "Spirit Barrage", 
 "Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush", "Meteor Strike", "Meteor Charge", 
 "Vanish Strike", "Vital Strike"}
 
@@ -1367,33 +1367,15 @@ end
                                         
 
                                         local Echar = v
-                                        local t
-                                        local db = false
                                         task.spawn(function()
-                                        t=0
                                             repeat
-                                               if db then
-                                                if t < 5 then
-                                                 t=t+1
+
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
                                                     Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 0)
-                                                   elseif t == 5 then
-                                                       db = false
-                                                         t = 0
-                                                       end
-                                                     elseif not db then
-                                                     if t < 5 then
-                                                       t=t+1
-                                                      local myChar = game.Players.LocalPlayer.Character
-                                                     myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 0)
-                                                      elseif t == 5 then
-                                                       db = true
-                                                         t = 0
-                                                       end
-                                                end
+
+
                                                 task.wait()
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0
