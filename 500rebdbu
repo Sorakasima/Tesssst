@@ -1373,7 +1373,7 @@ end
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 0)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 2)
 
 
                                                 task.wait()
