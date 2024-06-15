@@ -667,12 +667,12 @@ local quests = {{
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 180000000,
+    endRange = 200000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 180000001,
+    requiredValue = 200000001,
     endRange = 250000000,
     planet = "Bills"
 }, {
@@ -691,12 +691,12 @@ local quests = {{
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
     requiredValue = 800000001,
-    endRange = 1300000001,
+    endRange = 1500000001,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 1300000000,
+    requiredValue = 1500000000,
     endRange = 2000000000,
     planet = "Bills"
 }, {
