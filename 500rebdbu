@@ -613,54 +613,54 @@ local quests = {{
     name = "Mapa",
     nickname = "Mapa",
     requiredValue = 125001,
-    endRange = 250000,
+    endRange = 550000,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 250001,
-    endRange = 450000,
+    requiredValue = 550001,
+    endRange = 1050000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 450001,
-    endRange = 1000000,
+    requiredValue = 1050001,
+    endRange = 2000000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 1000001,
-    endRange = 3500000,
+    requiredValue = 2000001,
+    endRange = 6500000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 3500001,
-    endRange = 4500000,
+    requiredValue = 6500001,
+    endRange = 7500000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 4500001,
-    endRange = 5000000,
+    requiredValue = 7500001,
+    endRange = 8000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 5000001,
-    endRange = 15000000,
+    requiredValue = 8000001,
+    endRange = 20000000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 15000001,
-    endRange = 50000001,
+    requiredValue = 20000001,
+    endRange = 70000001,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 50000001,
+    requiredValue = 70000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
