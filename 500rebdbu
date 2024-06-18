@@ -1174,7 +1174,7 @@ check1()
                     data = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId]
                     local formtouse;
 
-                    if transformStatus == true and game.Workspace.Living[targetted].Stats.Ki.Value > 200 and
+                    if transformStatus == true and game.Workspace.Living[targetted].Stats.Ki.Value > 150 and
                         game:GetService("ReplicatedStorage").Datas[game.Players.LocalPlayer.UserId].Quest.Value ~=
                         "X Fighter Trainer" then
 
