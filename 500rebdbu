@@ -625,18 +625,18 @@ local quests = {{
     name = "Super Vegetable",
     nickname = "Super Vegetable",
     requiredValue = 487501,
-    endRange = 9550000,
+    endRange = 1000000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 9550001,
-    endRange = 1875000,
+    requiredValue = 1000001,
+    endRange = 2000000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 1875001,
+    requiredValue = 2000001,
     endRange = 3000000,
     planet = "Earth"
 }, {
