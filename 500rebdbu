@@ -1237,30 +1237,7 @@ check1()
         charge = true
     end
 
-    if flying == false and getgenv().dead == false and autoFarmLoopRunning == true then
-        success, err = pcall(function()
-
-            game.Workspace.Living:WaitForChild(targetted)
-            game.Workspace.Living[targetted]:WaitForChild("HumanoidRootPart")
-            local bv = game.Workspace.Living[targetted].HumanoidRootPart:WaitForChild("BodyVelocity")
-            local bg = game.Workspace.Living[targetted].HumanoidRootPart:WaitForChild("BodyGyro")
-            
-
-            bg.P = 1
-            bg.MaxTorque = Vector3.new(500000, 500000, 500000)
-            bv.P = 1
-            bv.MaxForce = Vector3.new(100000, 100000, 100000)
-            flying = true
-        end)
-        if success then
-            warn("Fly Function executed successfully")
-            -- Access the result returned by the function
-            
-        else
-            warn("Error occurred:", err)
-            
-        end
-    end
+    
 
     if getgenv().dead == false and autoFarmLoopRunning == true then
        warn("entered if for auto farm loop")
