@@ -189,7 +189,7 @@ local PaidFormsList = {
         formOwned = false,
         GamePassID = 6950465
     }, {
-        name = "Blano",
+        name = "Blanco",
         reqvalue = 120000001,
         endrangevalue = 100000000000000000000000,
         alignment = "Neutral",
