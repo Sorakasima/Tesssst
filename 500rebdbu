@@ -601,60 +601,60 @@ local quests = {{
     name = "Kid Nohag",
     nickname = "Kid Nohag",
     requiredValue = 12501,
-    endRange = 25000 ,
+    endRange = 55000 ,
     planet = "Earth"
 }, {
     name = "Radish",
     nickname = "Radish",
-    requiredValue = 25001,
-    endRange = 50000,
+    requiredValue = 55001,
+    endRange = 150000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 50001,
-    endRange = 112500,
+    requiredValue = 150001,
+    endRange = 252500,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 112501,
-    endRange = 187500,
+    requiredValue = 252501,
+    endRange = 487500,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 187501,
-    endRange = 550000,
+    requiredValue = 487501,
+    endRange = 9550000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 550001,
-    endRange = 875000,
+    requiredValue = 9550001,
+    endRange = 1875000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 875001,
-    endRange = 2000000,
+    requiredValue = 1875001,
+    endRange = 3000000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 2000001,
-    endRange = 3500000,
+    requiredValue = 3000001,
+    endRange = 4500000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 3500001,
-    endRange = 12500000,
+    requiredValue = 4500001,
+    endRange = 15500000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 12500001,
+    requiredValue = 15500001,
     endRange = 50000000,
     planet = "Earth"
 }, {
@@ -1373,7 +1373,7 @@ end
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 2)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1)
 
 
                                                 task.wait()
