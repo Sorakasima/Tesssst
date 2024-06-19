@@ -189,7 +189,7 @@ local PaidFormsList = {
         formOwned = false,
         GamePassID = 6950465
     }, {
-        name = "Blanco",
+        name = "Blano",
         reqvalue = 120000001,
         endrangevalue = 100000000000000000000000,
         alignment = "Neutral",
@@ -1373,7 +1373,7 @@ end
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 2)
 
 
                                                 task.wait()
