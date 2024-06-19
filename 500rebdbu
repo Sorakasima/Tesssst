@@ -607,12 +607,12 @@ local quests = {{
     name = "Radish",
     nickname = "Radish",
     requiredValue = 55001,
-    endRange = 150000,
+    endRange = 200000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 150001,
+    requiredValue = 200001,
     endRange = 252500,
     planet = "Earth"
 }, {
@@ -655,12 +655,12 @@ local quests = {{
     name = "Broccoli",
     nickname = "Broccoli",
     requiredValue = 15500001,
-    endRange = 50000000,
+    endRange = 65000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 50000001,
+    requiredValue = 65000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
@@ -703,12 +703,12 @@ local quests = {{
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
     requiredValue = 1800000001,
-    endRange = 3500000000,
+    endRange = 3000000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 3500000001,
+    requiredValue = 3000000001,
     endRange = 4500000000,
     planet = "Bills"
 }, {
