@@ -674,18 +674,18 @@ local quests = {{
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
     requiredValue = 200000001,
-    endRange = 300000000,
+    endRange = 250000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 300000001,
-    endRange = 500000000,
+    requiredValue = 250000001,
+    endRange = 400000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 500000001,
+    requiredValue = 400000001,
     endRange = 800000000,
     planet = "Bills"
 }, {
