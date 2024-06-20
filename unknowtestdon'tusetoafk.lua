@@ -1405,7 +1405,8 @@ t=0
 															A_4 = "Energy Volley"
                                                             A_2 = {
                                                                 ["FaceMouse"] = false,
-                                                                ["MouseHit"] = v }
+                                                                ["MouseHit"] = Echar
+										}			
                                                             A_3 = "Blacknwhite27"
                                                             Event =
                                                                 game:GetService("ReplicatedStorage").Package.Events
