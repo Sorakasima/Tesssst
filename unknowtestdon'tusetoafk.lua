@@ -1349,23 +1349,23 @@ task.spawn(function()
 t=0
                                             repeat
                                                if db then
-                                                if t < 6 then
+                                                if t < 10 then
                                                  t=t+1
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, .5)
-                                                   elseif t == 6 then
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 0)
+                                                   elseif t == 10 then
                                                        db = false
                                                          t = 0
                                                        end
                                                      elseif not db then
-                                                     if t < 6 then
+                                                     if t < 10 then
                                                        t=t+1
                                                       local myChar = game.Players.LocalPlayer.Character
                                                      myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, -0.5, .5)
-                                                      elseif t == 6 then
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, -0.5, 0.75)
+                                                      elseif t == 10 then
                                                        db = true
                                                          t = 0
                                                        end
