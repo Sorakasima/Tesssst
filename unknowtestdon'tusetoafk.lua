@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sorakasima/Tesssst/main/GUISTATUS"))()
 local loaded = false
  
    success, err = pcall(function()
