@@ -1341,20 +1341,37 @@ end
                                         
 
                                         local Echar = v
-                                        task.spawn(function()
+                                        local t
+local db = false
+task.spawn(function()
+t=0
                                             repeat
-
+                                               if db then
+                                                if t < 6 then
+                                                 t=t+1
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.5, 1.5)
-
-
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 0)
+                                                   elseif t == 6 then
+                                                       db = false
+                                                         t = 0
+                                                       end
+                                                     elseif not db then
+                                                     if t < 6 then
+                                                       t=t+1
+                                                      local myChar = game.Players.LocalPlayer.Character
+                                                     myChar.HumanoidRootPart.CFrame =
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, -0.5, 0)
+                                                      elseif t == 6 then
+                                                       db = true
+                                                         t = 0
+                                                       end
+                                                end
                                                 task.wait()
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0
                                         end)
-
                                         task.wait(0.2)
                                         local alignment = data.Allignment.Value
                                         if alignment == "Evil" then
