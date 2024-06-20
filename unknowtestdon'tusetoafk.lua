@@ -978,8 +978,8 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "High Power Rush", 
-"Mach Kick", "Meteor Crash", "Wolf Fang Fist"}
+local attacks2 = {"God Slicer", "Spirit Barrage", "High Power Rush", 
+"Mach Kick", "Meteor Crash", "Wolf Fang Fist", "Super Dragon Fist"}
 
 -- Function
 local attacks = { "Vital Strike", "Uppercut",
@@ -1349,23 +1349,23 @@ task.spawn(function()
 t=0
                                             repeat
                                                if db then
-                                                if t < 10 then
+                                                if t < 15 then
                                                  t=t+1
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 0)
-                                                   elseif t == 10 then
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.5, 0)
+                                                   elseif t == 15 then
                                                        db = false
                                                          t = 0
                                                        end
                                                      elseif not db then
-                                                     if t < 10 then
+                                                     if t < 15 then
                                                        t=t+1
                                                       local myChar = game.Players.LocalPlayer.Character
                                                      myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, -0.5, 0.75)
-                                                      elseif t == 10 then
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1)
+                                                      elseif t == 15 then
                                                        db = true
                                                          t = 0
                                                        end
