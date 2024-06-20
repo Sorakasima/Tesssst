@@ -680,36 +680,36 @@ local quests = {{
     name = "Vills (50%)",
     nickname = "Vills (50%)",
     requiredValue = 250000001,
-    endRange = 400000000,
+    endRange = 450000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 400000001,
+    requiredValue = 450000001,
     endRange = 800000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
     requiredValue = 800000001,
-    endRange = 1000000001,
+    endRange = 1200000001,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 1000000000,
+    requiredValue = 1200000000,
     endRange = 1500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
     requiredValue = 1500000001,
-    endRange = 2000000000,
+    endRange = 2250000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2000000001,
+    requiredValue = 2250000001,
     endRange = 3000000000,
     planet = "Bills"
 }, {
@@ -1354,7 +1354,7 @@ t=0
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.5, 0)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 1, 0.75)
                                                    elseif t == 15 then
                                                        db = false
                                                          t = 0
@@ -1364,7 +1364,7 @@ t=0
                                                        t=t+1
                                                       local myChar = game.Players.LocalPlayer.Character
                                                      myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1.25)
                                                       elseif t == 15 then
                                                        db = true
                                                          t = 0
@@ -1405,11 +1405,7 @@ t=0
 															A_4 = "Energy Volley"
                                                             A_2 = {
                                                                 ["FaceMouse"] = false,
-                                                                ["MouseHit"] = CFrame.new(15932.0273, -12.8115005,
-                                                                    15540.2061, 0.983303905, -0.0826973468, 0.162094966,
-                                                                    0, 0.89077127, 0.454452157, -0.181971505,
-                                                                    -0.446864575, 0.875898659)
-                                                            }
+                                                                ["MouseHit"] = Echar
                                                             A_3 = "Blacknwhite27"
                                                             Event =
                                                                 game:GetService("ReplicatedStorage").Package.Events
@@ -1438,7 +1434,7 @@ t=0
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 10
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 1
                                                     
 
                                             end
