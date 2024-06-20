@@ -1,4 +1,3 @@
-
 local loaded = false
  
    success, err = pcall(function()
@@ -590,42 +589,42 @@ local quests = {{
     name = "X Fighter Trainer",
     nickname = "X Fighter",
     requiredValue = 0,
-    endRange = 10000,
+    endRange = 6250,
     planet = "Earth"
 }, {
     name = "Klirin",
     nickname = "Klirin",
-    requiredValue = 10000,
-    endRange = 40000 ,
+    requiredValue = 6251,
+    endRange = 12500,
     planet = "Earth"
 }, {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
-    requiredValue = 40001,
-    endRange = 500001 ,
+    requiredValue = 12501,
+    endRange = 55000 ,
     planet = "Earth"
 }, {
     name = "Radish",
     nickname = "Radish",
-    requiredValue = 500001,
-    endRange = 150000,
+    requiredValue = 55001,
+    endRange = 200000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 150001,
-    endRange = 250000,
+    requiredValue = 200001,
+    endRange = 252500,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 250001,
-    endRange = 500000,
+    requiredValue = 252501,
+    endRange = 487500,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 500001,
+    requiredValue = 487501,
     endRange = 1000000,
     planet = "Earth"
 }, {
@@ -641,45 +640,39 @@ local quests = {{
     endRange = 3000000,
     planet = "Earth"
 }, {
-    name = "SSJ2 Wukong",
-    nickname = "SSJ2 Wukong",
-    requiredValue = 3000001,
-    endRange = 3500000,
-    planet = "Earth"
-}, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 3500001,
-    endRange = 4000000,
+    requiredValue = 3000001,
+    endRange = 4500000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 4000001,
-    endRange = 15000000,
+    requiredValue = 4500001,
+    endRange = 15500000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 15000001,
-    endRange = 50000001,
+    requiredValue = 15500001,
+    endRange = 65000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 50000001,
+    requiredValue = 65000001,
     endRange = 120000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 150000000,
+    endRange = 200000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 150000001,
+    requiredValue = 200000001,
     endRange = 300000000,
     planet = "Bills"
 }, {
@@ -698,35 +691,34 @@ local quests = {{
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
     requiredValue = 800000001,
-    endRange = 1300000000,
+    endRange = 1200000001,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 1300000001,
-    endRange = 1500000000,
+    requiredValue = 1200000000,
+    endRange = 1800000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 1500000001,
-    endRange = 2300000000,
+    requiredValue = 1800000001,
+    endRange = 3000000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2300000001,
-    endRange = 2500000000,
+    requiredValue = 3000000001,
+    endRange = 4500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 2500000001,
+    requiredValue = 4500000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
-
-                    
+               
 
 local function check1()
     pcall(function()
@@ -986,10 +978,7 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", 
-"Mach Kick", "Meteor Crash", "Wolf Fang Fist", "High Power Rush","Meteor Strike", "Spirit Breaking Cannon", "Meteor Charge", 
-"Flash Kick", "Uppercut", "Vanish Strike", "Bone Crusher", "Vital Strike" , "Sledgehammer"}
-
+local attacks2 = { "God Slicer", "Spirit Barrage", "Flash Kick", "Super Dragon Fist", "Spirit Breaking Cannon", "Meteor Strike", "Mach Kick", "High Power Rush", "Vanish Strike", "Meteor Crash", "Bone Crusher", "Meteor Charge", "Uppercut", "Wolf Fang Fist", "Sledgehammer", "Vital Strike"}
 -- Function
 local attacks = { "Vital Strike", "Uppercut",
                  "Spirit Breaking Cannon", "Vanish Strike"
@@ -1042,8 +1031,8 @@ local event = game:GetService("ReplicatedStorage").Package.Events.drain
 				return OldHook(self, ...)
 			end)
         end)
-game:GetService("Workspace").Others.BossMaps:Destroy()
-game:GetService("Workspace").Others.Map:Destroy()
+        
+
 
 questneeded = true
 SelectedMobs1 = ""
@@ -1182,7 +1171,7 @@ check1()
                     data = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId]
                     local formtouse;
 
-                    if transformStatus == true and game.Workspace.Living[targetted].Stats.Ki.Value > 300 and
+                    if transformStatus == true and game.Workspace.Living[targetted].Stats.Ki.Value > 101 and
                         game:GetService("ReplicatedStorage").Datas[game.Players.LocalPlayer.UserId].Quest.Value ~=
                         "X Fighter Trainer" then
 
@@ -1236,7 +1225,7 @@ check1()
                             end
                         until game.Players.LocalPlayer.Status.SelectedTransformation.Value ==
                             game.Players.LocalPlayer.Status.Transformation.Value or
-                            game.Workspace.Living[targetted].Stats.Ki.Value < 300
+                            game.Workspace.Living[targetted].Stats.Ki.Value < 101
                     end
 
                 end)
@@ -1246,30 +1235,7 @@ check1()
         charge = true
     end
 
-    if flying == false and getgenv().dead == false and autoFarmLoopRunning == true then
-        success, err = pcall(function()
-
-            game.Workspace.Living:WaitForChild(targetted)
-            game.Workspace.Living[targetted]:WaitForChild("HumanoidRootPart")
-            local bv = game.Workspace.Living[targetted].HumanoidRootPart:WaitForChild("BodyVelocity")
-            local bg = game.Workspace.Living[targetted].HumanoidRootPart:WaitForChild("BodyGyro")
-            
-
-            bg.P = 1
-            bg.MaxTorque = Vector3.new(500000, 500000, 500000)
-            bv.P = 1
-            bv.MaxForce = Vector3.new(100000, 100000, 100000)
-            flying = true
-        end)
-        if success then
-            warn("Fly Function executed successfully")
-            -- Access the result returned by the function
-            
-        else
-            warn("Error occurred:", err)
-            
-        end
-    end
+    
 
     if getgenv().dead == false and autoFarmLoopRunning == true then
        warn("entered if for auto farm loop")
@@ -1379,10 +1345,11 @@ end
                                             repeat
 
                                                 local myChar = game.Players.LocalPlayer.Character
-                                                
+
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1)
-                                                
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.5, 1.5)
+
+
                                                 task.wait()
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0
@@ -1402,12 +1369,7 @@ end
                                             
 
                                                 
-                                                   
-                                                   
-                                                        
-
-                                                
-                                                    if game.Workspace.Living[targetted].Stats.Ki.Value >= 1 then
+                                                    if game.Workspace.Living[targetted].Stats.Ki.Value >= 10 then
 													repeat
                                                         task.wait()
                                                         local Event =
@@ -1456,7 +1418,7 @@ end
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 1
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 10
                                                     
 
                                             end
