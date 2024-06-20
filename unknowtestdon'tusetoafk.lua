@@ -703,12 +703,12 @@ local quests = {{
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
     requiredValue = 1500000001,
-    endRange = 2250000000,
+    endRange = 2000000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2250000001,
+    requiredValue = 2000000001,
     endRange = 3000000000,
     planet = "Bills"
 }, {
@@ -718,7 +718,6 @@ local quests = {{
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
-               
 
 local function check1()
     pcall(function()
@@ -978,7 +977,9 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = { "God Slicer", "Spirit Barrage", "Flash Kick", "Super Dragon Fist", "Spirit Breaking Cannon", "Meteor Strike", "Mach Kick", "High Power Rush", "Vanish Strike", "Meteor Crash", "Bone Crusher", "Meteor Charge", "Uppercut", "Wolf Fang Fist", "Sledgehammer", "Vital Strike"}
+local attacks2 = {"Super Dragon Fist", "God Slicer", "Spirit Barrage", "High Power Rush", 
+"Mach Kick", "Meteor Crash", "Wolf Fang Fist"}
+
 -- Function
 local attacks = { "Vital Strike", "Uppercut",
                  "Spirit Breaking Cannon", "Vanish Strike"
@@ -1341,37 +1342,20 @@ end
                                         
 
                                         local Echar = v
-                                        local t
-local db = false
-task.spawn(function()
-t=0
+                                        task.spawn(function()
                                             repeat
-                                               if db then
-                                                if t < 6 then
-                                                 t=t+1
+
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 0)
-                                                   elseif t == 6 then
-                                                       db = false
-                                                         t = 0
-                                                       end
-                                                     elseif not db then
-                                                     if t < 6 then
-                                                       t=t+1
-                                                      local myChar = game.Players.LocalPlayer.Character
-                                                     myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, -0.5, 0)
-                                                      elseif t == 6 then
-                                                       db = true
-                                                         t = 0
-                                                       end
-                                                end
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.5, 1.5)
+
+
                                                 task.wait()
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0
                                         end)
+
                                         task.wait(0.2)
                                         local alignment = data.Allignment.Value
                                         if alignment == "Evil" then
