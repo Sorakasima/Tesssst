@@ -1402,11 +1402,11 @@ t=0
                                                         end)
                                                         task.spawn(function()
                                                        														
-															A_4 = "Energy Volley"
-                                                            A_2 = {
+							    A_4 = "Energy Volley"
+                                                            A_2 ={
                                                                 ["FaceMouse"] = false,
-                                                                ["MouseHit"] = Echar
-										}			
+                                                                ["MouseHit"] = Echar}
+													
                                                             A_3 = "Blacknwhite27"
                                                             Event =
                                                                 game:GetService("ReplicatedStorage").Package.Events
