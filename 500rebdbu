@@ -638,18 +638,18 @@ local quests = {{
     name = "Perfect Atom",
     nickname = "Perfect Atom",
     requiredValue = 2000001,
-    endRange = 3000000,
+    endRange = 4000000,
     planet = "Earth"
 }, {
     name = "Kai-fist Master",
     nickname = "Kai-fist Master",
-    requiredValue = 3000001,
-    endRange = 4500000,
+    requiredValue = 4000001,
+    endRange = 5500000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 4500001,
+    requiredValue = 5500001,
     endRange = 15500000,
     planet = "Earth"
 }, {
@@ -704,7 +704,7 @@ local quests = {{
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
     requiredValue = 1500000001,
-    endRange = 2000000000,
+    endRange = 2500000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
