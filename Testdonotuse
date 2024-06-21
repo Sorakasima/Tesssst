@@ -668,54 +668,54 @@ local quests = {{
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 200000000,
+    endRange = 180000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 200000001,
-    endRange = 250000000,
+    requiredValue = 1800000001,
+    endRange = 200000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 250000001,
+    requiredValue = 200000001,
     endRange = 450000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
     requiredValue = 450000001,
-    endRange = 800000000,
+    endRange = 650000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 800000001,
-    endRange = 1200000001,
+    requiredValue = 650000001,
+    endRange = 900000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 1200000000,
+    requiredValue = 900000001,
     endRange = 1500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
     requiredValue = 1500000001,
-    endRange = 2250000000,
+    endRange = 2000000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2250000001,
-    endRange = 3000000000,
+    requiredValue = 2500000001,
+    endRange = 1900000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 3000000001,
+    requiredValue = 2000000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
@@ -978,7 +978,7 @@ local function getQuest(switch1)
 end
 questneeded = false
 -- Function
-local attacks2 = {"God Slicer", "Spirit Barrage", "High Power Rush", 
+local attacks2 = {"High Power Rush", "God Slicer", "Spirit Barrage", 
 "Mach Kick", "Meteor Crash", "Wolf Fang Fist", "Super Dragon Fist"}
 
 -- Function
@@ -1014,14 +1014,7 @@ task.spawn(function()
     end
 end)
 
-task.spawn(function()
-    while true and task.wait() do
-        pcall(function()
 
-            game.Players.LocalPlayer.Status.Blocking.Value = true
-        end)
-    end
-end)
 pcall(function()
 local event = game:GetService("ReplicatedStorage").Package.Events.drain
 			local OldHook, hookmetamethod, getnamecallmethod = nil, hookmetamethod, getnamecallmethod
@@ -1343,29 +1336,29 @@ end
                                         
 
                                         local Echar = v
-                                       local t
+local t
 local db = false
 task.spawn(function()
 t=0
                                             repeat
                                                if db then
-                                                if t < 15 then
+                                                if t < 10 then
                                                  t=t+1
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.5, 1)
-                                                   elseif t == 15 then
+                                                    Echar.HumanoidRootPart.CFrame + Vector3.new(0, 0, 1.486)
+                                                   elseif t == 10 then
                                                        db = false
                                                          t = 0
                                                        end
                                                      elseif not db then
-                                                     if t < 15 then
+                                                     if t < 10 then
                                                        t=t+1
                                                       local myChar = game.Players.LocalPlayer.Character
                                                      myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1.5)
-                                                      elseif t == 15 then
+                                                     Echar.HumanoidRootPart.CFrame + Vector3.new(0, 1, 0.359)
+                                                      elseif t == 10 then
                                                        db = true
                                                          t = 0
                                                        end
@@ -1374,7 +1367,7 @@ t=0
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0
                                         end)
-											
+
                                         task.wait(0.2)
                                         local alignment = data.Allignment.Value
                                         if alignment == "Evil" then
@@ -1402,11 +1395,11 @@ t=0
                                                         end)
                                                         task.spawn(function()
                                                        														
-							    A_4 = "Energy Volley"
-                                                            A_2 ={
+															A_4 = "Energy Volley"
+                                                            A_2 = {
                                                                 ["FaceMouse"] = false,
-                                                                ["MouseHit"] = Echar}
-													
+                                                                ["MouseHit"] = Echar.HumanoidRootPart.CFrame
+                                                            }
                                                             A_3 = "Blacknwhite27"
                                                             Event =
                                                                 game:GetService("ReplicatedStorage").Package.Events
@@ -1435,7 +1428,7 @@ t=0
                                                     task.wait()
                                                 until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                     game.Players.LocalPlayer.Character.Humanoid.Health <= 0 or
-                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 1
+                                                    game.Workspace.Living[targetted].Stats.Ki.Value < 10
                                                     
 
                                             end
