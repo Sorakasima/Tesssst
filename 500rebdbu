@@ -716,7 +716,7 @@ local quests = {{
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
     requiredValue = 2000000001,
-    endRange = 2500000000,
+    endRange = 900000000000000000000000,
     planet = "Bills"
 }}
 
