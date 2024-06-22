@@ -1162,7 +1162,7 @@ check1()
 
                     if transformStatus == true and game.Workspace.Living[targetted].Stats.Ki.Value > 101 and
                         game:GetService("ReplicatedStorage").Datas[game.Players.LocalPlayer.UserId].Quest.Value ~=
-                        "X Fighter Trainer" then
+                        "Klirin" then
 
                         local value = getCheckValue()
                         local alignment = data.Allignment.Value
