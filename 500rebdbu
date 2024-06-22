@@ -587,12 +587,6 @@ local FormsList = {
 }
 
 local quests = {{
-    name = "X Fighter Trainer",
-    nickname = "X Fighter",
-    requiredValue = 0,
-    endRange = 6250,
-    planet = "Earth"
-}, {
     name = "Klirin",
     nickname = "Klirin",
     requiredValue = 6251,
