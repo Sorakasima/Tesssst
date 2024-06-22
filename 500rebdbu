@@ -680,18 +680,18 @@ local quests = {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
     requiredValue = 550000001,
-    endRange = 950000000,
+    endRange = 1500000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 950000001,
-    endRange = 1450000000,
+    requiredValue = 1500000001,
+    endRange = 2000000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 14500000001,
+    requiredValue = 2000000001,
     endRange = 2500000000,
     planet = "Bills"
 }, {
