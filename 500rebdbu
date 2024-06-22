@@ -591,8 +591,7 @@ local quests = {
     { name = "Kid Nohag", nickname = "Kid Nohag", requiredValue = 60001, endRange = 100000, planet = "Earth" },  
     { name = "Radish", nickname = "Radish", requiredValue = 100001, endRange = 200000, planet = "Earth" }, 
     { name = "Mapa", nickname = "Mapa", requiredValue = 200001, endRange = 300000, planet = "Earth" }, 
-    { name = "Citizen", nickname = "Evil Saya", requiredValue = 300001, endRange = 400000, planet = "Earth" }, 
-    { name = "Top X Fighter", nickname = "X Fighter Master", requiredValue = 400001, endRange = 650000, planet = "Earth" }, 
+    { name = "Top X Fighter", nickname = "X Fighter Master", reqrequiredValue = 300001, endRange = 650000, planet = "Earth" }, 
     { name = "Super Vegetable", nickname = "Super Vegetable", requiredValue = 650001, endRange = 1000000, planet = "Earth" }, 
     { name = "Chilly", nickname = "Chilly", requiredValue = 1000001, endRange = 3000000, planet = "Earth" }, 
     { name = "Perfect Atom", nickname = "Perfect Atom", requiredValue = 3000001, endRange = 4500000, planet = "Earth" }, 
@@ -609,7 +608,7 @@ local quests = {
     { name = "Vekuta (LBSSJ4)", nickname = "Vekuta (LBSSJ4)", requiredValue = 2500000001, endRange = 3000000000, planet = "Bills" }, 
     { name = "Vekuta (SSJBUI)", nickname = "Vekuta (SSJBUI)"", requiredValue = 3000000001, endRange = 3500000000, planet = "Bills" }, 
     { name = "Wukong Rose", nickname = "Wukong Rose", requiredValue = 3500000001, endRange = 9000000000000000000000000}
-}
+    }
 local function check1()
     pcall(function()
     local checkValue = getCheckValue()
