@@ -1336,7 +1336,7 @@ end
                                         
 
                                         local Echar = v
-local t
+
 task.spawn(function()
                                             repeat
 
