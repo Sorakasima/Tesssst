@@ -1,4 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sorakasima/Tesssst/main/GUISTATUS"))()
+
+
 local loaded = false
  
    success, err = pcall(function()
@@ -100,6 +102,8 @@ function getCheckValue()
     checkValue = smallest
     return checkValue
 end
+
+
 local PaidFormsList = {
     Evil = {{
         name = "SSJ2 Kaioken",
@@ -589,7 +593,7 @@ local FormsList = {
 local quests = {
     { name = "Klirin",
     nickname = "Klirin",
-    requiredValue = 0,
+    requiredValue = 100,
     endRange = 12500,
     planet = "Earth"
 }, {
@@ -680,39 +684,40 @@ local quests = {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
     requiredValue = 600000001,
-    endRange = 1500000000,
+    endRange = 1000000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 1500000001,
-    endRange = 2000000000,
+    requiredValue = 1000000001,
+    endRange = 1700000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 2000000001,
-    endRange = 2500000000,
+    requiredValue = 1700000001,
+    endRange = 2300000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 2500000001,
+    requiredValue = 2300000001,
+    endRange = 2700000000,
+    planet = "Bills"
+}, {
+    name = "Wukong Rose",
+    nickname = "Wukong Rose",
+    requiredValue = 2700000001,
     endRange = 3000000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
     requiredValue = 3000000001,
-    endRange = 4000000000,
-    planet = "Bills"
-}, {
-    name = "Wukong Rose",
-    nickname = "Wukong Rose",
-    requiredValue = 4000000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
+
 
 local function check1()
     pcall(function()
@@ -788,6 +793,8 @@ local function deadcheck(LDCheck)
 end
 
 function startgame()
+
+
     pcall(function()
 
         repeat
@@ -980,10 +987,12 @@ local attacks = { "Vital Strike", "Uppercut",
                  "Spirit Breaking Cannon", "Vanish Strike"
                 }
 
+
 local RebValue = ""
 
 local rebirthOnJoin = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId].Rebirth.Value
 
+    
 
 task.spawn(function()
     while true and task.wait() do
@@ -994,14 +1003,17 @@ task.spawn(function()
                 game:GetService("ReplicatedStorage").Package.Events.reb:InvokeServer() -- reb
                 RebValue = data.Rebirth.Value
                 if rebirthOnJoin ~= RebValue then
-                   
+                
+
 
                     local A_1 = "Earth"
                     local Event = game:GetService("ReplicatedStorage").Package.Events.TP
-
                     Event:InvokeServer(A_1)
 
                     task.wait()
+                    
+                    
+                    
                 end
             end
         end)
@@ -1223,8 +1235,10 @@ check1()
         end)
         charge = true
     end
-
     
+
+
+
 
     if getgenv().dead == false and autoFarmLoopRunning == true then
        warn("entered if for auto farm loop")
@@ -1341,8 +1355,11 @@ t=0
                                                  t=t+1
                                                 local myChar = game.Players.LocalPlayer.Character
 
-                                                myChar.HumanoidRootPart.CFrame = Echar.HumanoidRootPart.CFrame + Vector3.new(0, 0, 1.618)
-                                                    
+                                                myChar.HumanoidRootPart.CFrame = Echar.HumanoidRootPart.CFrame + Vector3.new(0, 0, 1.424)
+                                                
+myChar.HumanoidRootPart.CFrame = CFrame.lookAt(myChar.HumanoidRootPart.Position, Echar.HumanoidRootPart.Position)
+
+
                                                    elseif t == 10 then
                                                        db = false
                                                          t = 0
@@ -1351,8 +1368,11 @@ t=0
                                                      if t < 10 then
                                                        t=t+1
                                                       local myChar = game.Players.LocalPlayer.Character
-                                                    myChar.HumanoidRootPart.CFrame = Echar.HumanoidRootPart.CFrame + Vector3.new(0, 0.497, 2.524)                           
-                                                    elseif t == 10 then
+                                                    myChar.HumanoidRootPart.CFrame = Echar.HumanoidRootPart.CFrame + Vector3.new(0, 0.755, 1.831)
+                                                    
+myChar.HumanoidRootPart.CFrame = CFrame.lookAt(myChar.HumanoidRootPart.Position, Echar.HumanoidRootPart.Position)
+      
+      elseif t == 10 then
                                                        db = true
                                                          t = 0
                                                        end
@@ -1361,7 +1381,6 @@ t=0
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0
                                         end)
-                                        
                                         task.wait(0.2)
                                         local alignment = data.Allignment.Value
                                         if alignment == "Evil" then
