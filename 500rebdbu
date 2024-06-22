@@ -607,8 +607,8 @@ local quests = {
     { name = "Wukong (LBSSJ4)", nickname = "Wukong (LBSSJ4)", requiredValue = 2000000001, endRange = 2500000000, planet = "Bills" }, 
     { name = "Vekuta (LBSSJ4)", nickname = "Vekuta (LBSSJ4)", requiredValue = 2500000001, endRange = 3000000000, planet = "Bills" }, 
     { name = "Vekuta (SSJBUI)", nickname = "Vekuta (SSJBUI)"", requiredValue = 3000000001, endRange = 3500000000, planet = "Bills" }, 
-    { name = "Wukong Rose", nickname = "Wukong Rose", requiredValue = 3500000001, endRange = 9000000000000000000000000}
-    }
+    { name = "Wukong Rose", nickname = "Wukong Rose", requiredValue = 3500000001, endRange = 9000000000000000000000000}}
+
 local function check1()
     pcall(function()
     local checkValue = getCheckValue()
