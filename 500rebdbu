@@ -686,7 +686,7 @@ local quests = {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
     requiredValue = 950000001,
-    endRange = 14500000000,
+    endRange = 1450000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
