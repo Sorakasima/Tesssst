@@ -1347,7 +1347,7 @@ t=0
                                                 local myChar = game.Players.LocalPlayer.Character
 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 1, 0.635)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.876, 1.635)
                                                    elseif t == 10 then
                                                        db = false
                                                          t = 0
