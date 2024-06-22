@@ -638,18 +638,18 @@ local quests = {{
     name = "Perfect Atom",
     nickname = "Perfect Atom",
     requiredValue = 2000001,
-    endRange = 4000000,
+    endRange = 3000000,
     planet = "Earth"
 }, {
-    name = "Kai-fist Master",
-    nickname = "Kai-fist Master",
-    requiredValue = 4000001,
-    endRange = 5500000,
+    name = "SSJ2 Wukong",
+    nickname = "SSJ2 Wukong",
+    requiredValue = 3000001,
+    endRange = 4500000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 5500001,
+    requiredValue = 4500001,
     endRange = 15500000,
     planet = "Earth"
 }, {
@@ -674,24 +674,24 @@ local quests = {{
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
     requiredValue = 200000001,
-    endRange = 250000000,
+    endRange = 270000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 250000001,
-    endRange = 650000000,
+    requiredValue = 270000001,
+    endRange = 475000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 650000001,
-    endRange = 1000000000,
+    requiredValue = 475000001,
+    endRange = 800000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 1000000001,
+    requiredValue = 800000001,
     endRange = 1500000000,
     planet = "Bills"
 }, {
@@ -710,12 +710,12 @@ local quests = {{
     name = "Wukong Rose",
     nickname = "Wukong Rose",
     requiredValue = 2500000001,
-    endRange = 2700000000,
+    endRange = 2600000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 270000001,
+    requiredValue = 260000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
@@ -1343,7 +1343,7 @@ task.spawn(function()
                                                 local myChar = game.Players.LocalPlayer.Character
                                                 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.5, 4)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 4)
                                             
                                                                                               
                                                 task.wait()
@@ -1380,8 +1380,8 @@ task.spawn(function()
                                                        														
 															A_4 = "Energy Volley"
                                                             A_2 = {
-                                                                ["FaceMouse"] = true,
-                                                                ["MouseHit"] = v.HumannoidRootPart.CFrame
+                                                                ["FaceMouse"] = false,
+                                                                ["MouseHit"] = v.HumanoidRootPart.CFrame
                                                             }
                                                             A_3 = "Blacknwhite27"
                                                             Event =
