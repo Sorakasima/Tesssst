@@ -589,7 +589,7 @@ local FormsList = {
 local quests = {{
     name = "Klirin",
     nickname = "Klirin",
-    requiredValue = 6251,
+    requiredValue = 0,
     endRange = 12500,
     planet = "Earth"
 }, {
