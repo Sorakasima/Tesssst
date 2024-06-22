@@ -1380,8 +1380,8 @@ task.spawn(function()
                                                        														
 															A_4 = "Energy Volley"
                                                             A_2 = {
-                                                                ["FaceMouse"] = false,
-                                                                ["MouseHit"] = Echar.HumanoidRootPart.CFrame
+                                                                ["FaceMouse"] = true,
+                                                                ["MouseHit"] = CFrame.new(4, 3.918, 3.99, 4.19)
                                                             }
                                                             A_3 = "Blacknwhite27"
                                                             Event =
