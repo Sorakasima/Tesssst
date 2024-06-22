@@ -638,18 +638,18 @@ local quests = {{
     name = "Perfect Atom",
     nickname = "Perfect Atom",
     requiredValue = 2000001,
-    endRange = 4000000,
+    endRange = 3000000,
     planet = "Earth"
 }, {
-    name = "Kai-fist Master",
-    nickname = "Kai-fist Master",
-    requiredValue = 4000001,
-    endRange = 5500000,
+    name = "SSJ2 Wukong",
+    nickname = "SSJ2 Wukong",
+    requiredValue = 3000001,
+    endRange = 4500000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 5500001,
+    requiredValue = 4500001,
     endRange = 15500000,
     planet = "Earth"
 }, {
