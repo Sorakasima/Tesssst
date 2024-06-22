@@ -1343,7 +1343,7 @@ task.spawn(function()
                                                 local myChar = game.Players.LocalPlayer.Character
                                                 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.5, 3)
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.5, 4)
                                             
                                                                                               
                                                 task.wait()
@@ -1381,7 +1381,7 @@ task.spawn(function()
 															A_4 = "Energy Volley"
                                                             A_2 = {
                                                                 ["FaceMouse"] = true,
-                                                                ["MouseHit"] = CFrame.new(4, 3.918, 3.99, 4.19)
+                                                                ["MouseHit"] = v.HumannoidRootPart.CFrame
                                                             }
                                                             A_3 = "Blacknwhite27"
                                                             Event =
