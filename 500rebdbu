@@ -698,24 +698,24 @@ local quests = {{
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
     requiredValue = 1000000001,
-    endRange = 1700000000,
+    endRange = 1500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 1700000001,
-    endRange = 2500000000,
+    requiredValue = 1500000001,
+    endRange = 2250000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2500000001,
-    endRange = 3000000000,
+    requiredValue = 2250000001,
+    endRange = 2500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 300000001,
+    requiredValue = 250000001,
     endRange = 900000000000000000000000,
     planet = "Bills"
 }}
@@ -1336,33 +1336,16 @@ end
                                         
 
                                         local Echar = v
-local t
-local db = false
-task.spawn(function()
-t=0
-                                            repeat
-                                               if db then
-                                                if t < 10 then
-                                                 t=t+1
-                                                local myChar = game.Players.LocalPlayer.Character
 
+task.spawn(function()
+                                            repeat
+
+                                                local myChar = game.Players.LocalPlayer.Character
+                                                
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0.876, 1.635)
-                                                   elseif t == 10 then
-                                                       db = false
-                                                         t = 0
-                                                       end
-                                                     elseif not db then
-                                                     if t < 10 then
-                                                       t=t+1
-                                                      local myChar = game.Players.LocalPlayer.Character
-                                                     myChar.HumanoidRootPart.CFrame =
-                                                     Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 1.498)
-                                                      elseif t == 10 then
-                                                       db = true
-                                                         t = 0
-                                                       end
-                                                end
+                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 3)
+                                            
+                                                                                              
                                                 task.wait()
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0
