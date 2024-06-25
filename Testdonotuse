@@ -1,4 +1,6 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Sorakasima/Tesssst/main/GUISTATUS"))()
+
+local rebhok = "https://discord.com/api/webhooks/1254286621512175706/6oXbfmvVapuBpmCeexHYEm5fhljWxiZNdzgF4XCoHyjQMHOc_DrJ8-K6cp9u0rY_5BJ-" 
+    
 local loaded = false
  
    success, err = pcall(function()
@@ -100,6 +102,46 @@ function getCheckValue()
     checkValue = smallest
     return checkValue
 end
+if game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId].Energy.Value <= 0 and game.placeId ~= 5151400895 then  --WEBHOOKK
+    local OSTime = os.time();
+    local Time = os.date('!*t', OSTime);
+    local dt = DateTime.now()
+    local Webhook_URL = rebhok
+
+    local Headers = {
+        ['Content-Type'] = 'application/json',
+    }
+
+    local data = {
+        ["embeds"] = {
+            {
+                ["title"] = "User:",
+                ["description"] = game.Players.LocalPlayer.Name .. "",
+                ["type"] = "rich",
+                ["color"] = tonumber(0x644CFF),
+                ["fields"] = {
+                    {
+                        ["name"] = "Rebirths:",
+                        ["value"] = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId].Rebirth.Value .. '',
+                        ["inline"] = true,
+                    },
+                    {
+                        ["name"] = ":tada: Congratulations :tada:",
+                        ["value"] = 'Rebirthed At: ' ..dt:FormatLocalTime("hh", "en-us").. 'h' .. dt:FormatLocalTime("mm", "en-us") .. 'm' .. 
+                        dt:FormatLocalTime("mm", "en-us") .. 's',
+                        ["inline"] = true,
+                    },
+                },
+            },
+        },
+    }
+
+    local PlayerData = game:GetService('HttpService'):JSONEncode(data)
+
+    local Request = http_request or request or HttpPost or syn.request
+
+        Request({Url = Webhook_URL, Body = PlayerData, Method = "POST", Headers = Headers})
+    end
 local PaidFormsList = {
     Evil = {{
         name = "SSJ2 Kaioken",
@@ -590,135 +632,138 @@ local quests = {{
     name = "X Fighter Trainer",
     nickname = "X Fighter",
     requiredValue = 0,
-    endRange = 6250,
+    endRange = 10000,
     planet = "Earth"
 }, {
     name = "Klirin",
     nickname = "Klirin",
-    requiredValue = 6251,
-    endRange = 12500,
+    requiredValue = 10001,
+    endRange = 20000,
     planet = "Earth"
 }, {
     name = "Kid Nohag",
     nickname = "Kid Nohag",
-    requiredValue = 12501,
-    endRange = 55000 ,
+    requiredValue = 20001,
+    endRange = 50000,
     planet = "Earth"
 }, {
     name = "Radish",
     nickname = "Radish",
-    requiredValue = 55001,
-    endRange = 200000,
+    requiredValue = 50001,
+    endRange = 150000,
     planet = "Earth"
 }, {
     name = "Mapa",
     nickname = "Mapa",
-    requiredValue = 200001,
-    endRange = 252500,
+    requiredValue = 150001,
+    endRange = 200000,
     planet = "Earth"
 }, {
     name = "Top X Fighter",
     nickname = "X Fighter Master",
-    requiredValue = 252501,
-    endRange = 487500,
+    requiredValue = 200001,
+    endRange = 300000,
     planet = "Earth"
 }, {
     name = "Super Vegetable",
     nickname = "Super Vegetable",
-    requiredValue = 487501,
-    endRange = 1000000,
+    requiredValue = 300001,
+    endRange = 7000000,
     planet = "Earth"
 }, {
     name = "Chilly",
     nickname = "Chilly",
-    requiredValue = 1000001,
-    endRange = 2000000,
+    requiredValue = 7000001,
+    endRange = 1000000,
     planet = "Earth"
 }, {
     name = "Perfect Atom",
     nickname = "Perfect Atom",
-    requiredValue = 2000001,
-    endRange = 3000000,
+    requiredValue = 1000001,
+    endRange = 2000000,
     planet = "Earth"
 }, {
     name = "SSJ2 Wukong",
     nickname = "SSJ2 Wukong",
-    requiredValue = 3000001,
-    endRange = 4500000,
+    requiredValue = 2000001,
+    endRange = 3000000,
     planet = "Earth"
 }, {
     name = "SSJB Wukong",
     nickname = "SSJB Wukong",
-    requiredValue = 4500001,
-    endRange = 15500000,
+    requiredValue = 3000001,
+    endRange = 15000000,
     planet = "Earth"
 }, {
     name = "Broccoli",
     nickname = "Broccoli",
-    requiredValue = 15500001,
+    requiredValue = 15000001,
     endRange = 65000000,
     planet = "Earth"
 }, {
     name = "SSJG Kakata",
     nickname = "SSJG Kakata",
-    requiredValue = 65000001,
+    requiredValue = 65000000,
     endRange = 120000000,
     planet = "Earth"
 }, {
     name = "Vegetable (GoD in-training)",
     nickname = "Vegetable (GoD in-training)",
     requiredValue = 120000001,
-    endRange = 200000000,
+    endRange = 180000000,
     planet = "Bills"
 }, {
     name = "Wukong (Omen)",
     nickname = "Wukong (Omen)",
-    requiredValue = 200000001,
-    endRange = 270000000,
+    requiredValue = 180000001,
+    endRange = 250000000,
     planet = "Bills"
 }, {
     name = "Vills (50%)",
     nickname = "Vills (50%)",
-    requiredValue = 270000001,
-    endRange = 475000000,
+    requiredValue = 250000000,
+    endRange = 550000000,
     planet = "Bills"
 }, {
     name = "Vis (20%)",
     nickname = "Vis (20%)",
-    requiredValue = 475000001,
-    endRange = 800000000,
+    requiredValue = 550000001,
+    endRange = 700000000,
     planet = "Bills"
 }, {
     name = "Vegetable (LBSSJ4)",
     nickname = "Vegetable (LBSSJ4)",
-    requiredValue = 800000001,
-    endRange = 1500000000,
+    requiredValue = 700000001,
+    endRange = 1000000000,
     planet = "Bills"
 }, {
     name = "Wukong (LBSSJ4)",
     nickname = "Wukong (LBSSJ4)",
-    requiredValue = 1500000001,
-    endRange = 2000000000,
+    requiredValue = 1000000001,
+    endRange = 1500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (LBSSJ4)",
     nickname = "Vekuta (LBSSJ4)",
-    requiredValue = 2000000001,
-    endRange = 2500000000,
+    requiredValue = 1500000001,
+    endRange = 3000000000,
     planet = "Bills"
 }, {
     name = "Wukong Rose",
     nickname = "Wukong Rose",
-    requiredValue = 2500000001,
-    endRange = 2600000000,
+    requiredValue = 2000000001,
+    endRange = 2500000000,
     planet = "Bills"
 }, {
     name = "Vekuta (SSJBUI)",
     nickname = "Vekuta (SSJBUI)",
-    requiredValue = 260000001,
-    endRange = 900000000000000000000000,
+    requiredValue = 2500000001,
+    endRange = 2000000000000000000,
     planet = "Bills"
 }}
+
+
+
 
 local function check1()
     pcall(function()
@@ -856,7 +901,7 @@ local function autostack(stack1)
     pcall(function()
         targetted = game.Players.LocalPlayer.name
         data = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId]
-        if stack1 == true and data.Energy.Value >= 8000000 and getgenv().dead == false then
+        if stack1 == true and data.Energy.Value > 8000000 and getgenv().dead == false then
             task.wait(1)
 
             game.workspace.Living[targetted].UpperTorso:Destroy()
@@ -1014,7 +1059,14 @@ task.spawn(function()
     end
 end)
 
+task.spawn(function()
+    while true and task.wait() do
+        pcall(function()
 
+            game.Players.LocalPlayer.Status.Blocking.Value = true
+        end)
+    end
+end)
 pcall(function()
 local event = game:GetService("ReplicatedStorage").Package.Events.drain
 			local OldHook, hookmetamethod, getnamecallmethod = nil, hookmetamethod, getnamecallmethod
@@ -1026,8 +1078,8 @@ local event = game:GetService("ReplicatedStorage").Package.Events.drain
 				return OldHook(self, ...)
 			end)
         end)
-        
-
+        game:GetService("Workspace").Others.BossMaps:Destroy()
+        game.Lighting.Blur.Size = 9999
 
 questneeded = true
 SelectedMobs1 = ""
@@ -1054,7 +1106,7 @@ while true do
                     success, err = pcall(function()
                         targetted = game.Players.LocalPlayer.name
                         data = game.ReplicatedStorage.Datas[game.Players.LocalPlayer.UserId]
-                        if stack1 == true and data.Energy.Value >= 8000000 and getgenv().dead == false then
+                        if stack1 == true and data.Energy.Value > 8000000 and getgenv().dead == false then
                             task.wait(1)
                 
                             game.workspace.Living[targetted].UpperTorso:Destroy()
@@ -1230,7 +1282,30 @@ check1()
         charge = true
     end
 
-    
+    --[[if flying == false and getgenv().dead == false and autoFarmLoopRunning == true then
+        success, err = pcall(function()
+
+            game.Workspace.Living:WaitForChild(targetted)
+            game.Workspace.Living[targetted]:WaitForChild("HumanoidRootPart")
+            local bv = game.Workspace.Living[targetted].HumanoidRootPart:WaitForChild("BodyVelocity")
+            local bg = game.Workspace.Living[targetted].HumanoidRootPart:WaitForChild("BodyGyro")
+            
+
+            bg.P = 1
+            bg.MaxTorque = Vector3.new(500000, 500000, 500000)
+            bv.P = 1
+            bv.MaxForce = Vector3.new(100000, 100000, 100000)
+            flying = true
+        end)
+        if success then
+            warn("Fly Function executed successfully")
+            -- Access the result returned by the function
+            
+        else
+            warn("Error occurred:", err)
+            
+        end
+    end]]
 
     if getgenv().dead == false and autoFarmLoopRunning == true then
        warn("entered if for auto farm loop")
@@ -1336,16 +1411,15 @@ end
                                         
 
                                         local Echar = v
-
-task.spawn(function()
+                                        task.spawn(function()
                                             repeat
 
                                                 local myChar = game.Players.LocalPlayer.Character
                                                 
                                                 myChar.HumanoidRootPart.CFrame =
-                                                    Echar:GetPrimaryPartCFrame() * CFrame.new(0, 0, 4)
-                                            
-                                                                                              
+                                                    Echar.HumanoidRootPart.CFrame + Vector3.new(0, 0, 2.25)
+                                                    
+myChar.HumanoidRootPart.CFrame = CFrame.lookAt(myChar.HumanoidRootPart.Position, Echar.HumanoidRootPart.Position)
                                                 task.wait()
                                             until not autoFarmLoopRunning or v.Humanoid.Health <= 0 or
                                                 game.Players.LocalPlayer.Character.Humanoid.Health <= 0
@@ -1362,20 +1436,8 @@ task.spawn(function()
                                         repeat
                                             task.wait()
                                             
-                                            
-
-                                                
                                                     if game.Workspace.Living[targetted].Stats.Ki.Value >= 10 then
 													repeat
-                                                        task.wait()
-                                                        local Event =
-                                                            game:GetService("ReplicatedStorage").Package.Events.mel
-                                                        local A_2 = "Blacknwhite27"
-                                                        task.spawn(function()
-                                                            
-                                                            Event:InvokeServer(A_1, A_2)
-
-                                                        end)
                                                         task.spawn(function()
                                                        														
 															A_4 = "Energy Volley"
